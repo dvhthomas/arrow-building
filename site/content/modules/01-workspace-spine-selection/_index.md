@@ -75,7 +75,7 @@ Easton's technical documentation makes the key point explicit: "Dynamic spine de
 
 The arrow rests to the side of the riser. At the moment of release, it points *away* from the target. And yet it flies to the target. That is {{< gloss "Archer's paradox" >}}.
 
-{{< figure src="https://upload.wikimedia.org/wikipedia/commons/6/6c/Arrow-flexing.png" alt="Diagram showing an arrow flexing around the bow riser during release — the archer's paradox" caption="Arrow flexing around the riser of the bow during release. Source: Wikimedia Commons, Hagis123123, CC BY-SA 3.0." >}}
+{{< figure src="archers-paradox.png" alt="Diagram showing an arrow flexing around the bow riser during release — the archer's paradox" caption="Arrow flexing around the riser of the bow during release. Source: Wikimedia Commons, Hagis123123, CC BY-SA 3.0." >}}
 
 Wikipedia's description captures it precisely: "The paradox is that an arrow will fly in a straight line to a target when it starts off pointing away from the target. In order to be accurate, an arrow must have the correct stiffness, or 'dynamic spine', to flex out of the way of the bow and to return to the correct path as it leaves the bow."[^paradox]
 

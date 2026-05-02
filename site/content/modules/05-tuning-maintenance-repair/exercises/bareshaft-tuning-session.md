@@ -130,9 +130,9 @@ Copy this table into a notebook or print it. Fill in one row per session.
 **H** = horizontal offset (L/R inches from fletched group center, note direction).
 **V** = vertical offset (H/L inches from fletched group center, note direction).
 
-{{< visual-needed what="Bareshaft tuning target — left-handed diagnosis pattern" youtube="bareshaft tuning recurve longbow target" wikimedia="bareshaft tuning" >}}
-Picture a target face. Fletched arrows cluster in the center. Your bare shaft lands somewhere relative to that cluster. **For a left-handed shooter:** bare shaft LEFT of group = too weak (more spine needed); bare shaft RIGHT of group = too stiff (less spine, or heavier point). Vertical: HIGH = nocking point too low; LOW = nocking point too high. The horizontal table flips for right-handed shooters.
-{{< /visual-needed >}}
+{{< youtube pE2YHfr2rXA >}}
+
+*Tuning a Recurve, longbow, or selfbow for perfect arrow flight. The clearest demo of the bareshaft pattern. **For a left-handed shooter:** bare shaft LEFT of group = too weak; bare shaft RIGHT = too stiff (the diagram flips for right-handed shooters in the video).*
 
 ## Verification
 

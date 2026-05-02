@@ -40,9 +40,9 @@ Work through each station in order. Fill in the bracketed items as you go.
 
 **[TODO: Record the offset angle setting (in degrees, as marked on the clamp or jig). If the clamp has no markings, note "unmarked offset" and describe the physical set position. Note whether all three rotation positions hold firmly: detent 1 — yes/no, detent 2 — yes/no, detent 3 — yes/no.]**
 
-{{< visual-needed what="Fletching jig — body, clamp arm, offset clamp, indexing ring" youtube="fletching jig archery setup" wikimedia="fletching jig" >}}
-A typical jig has a central spindle with three indexed positions 120° apart, an arm that holds the clamp at a precise distance from the nock, and an offset clamp that grips the feather base at a 2–3° angle. Manufacturer setup videos (Bohning, Bitzenberger) show the parts and motions clearly.
-{{< /visual-needed >}}
+{{< youtube JgCKBidYh40 >}}
+
+*Setup your Fletching Jig Correctly and Fletch Arrows like a Pro. The first three minutes show the jig's anatomy — body, clamp arm, offset clamp, indexing ring — which is what you're identifying in this exercise.*
 
 ### Station 4 — Dip tube
 

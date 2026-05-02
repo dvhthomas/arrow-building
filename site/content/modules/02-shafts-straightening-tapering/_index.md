@@ -49,7 +49,7 @@ For a 40-pound left-handed bow at a 28-inch draw, 11/32-inch Port Orford cedar i
 
 {{< gloss "Sitka spruce" >}} is stiffer and lighter than cedar, which makes it historically interesting (it was favored for flight arrows), but it is more difficult to source today and its greater stiffness at 11/32-inch can push it out of the useful spine window for a 40-pound bow. It is not part of this build.
 
-{{< figure src="https://upload.wikimedia.org/wikipedia/commons/1/16/Chamaecyparis_lawsoniana_Siskiyou_NF_1.jpg" alt="Mature Port Orford cedar (Chamaecyparis lawsoniana) growing in Siskiyou National Forest, Oregon" caption="Port Orford cedar (*Chamaecyparis lawsoniana*) in its native habitat — Francis Shrader Old Growth Trail, Oregon. Source: Wikimedia Commons, Jami Dwyer, CC BY-SA 2.0." >}}
+{{< figure src="cedar-port-orford.jpg" alt="Mature Port Orford cedar (Chamaecyparis lawsoniana) growing in Siskiyou National Forest, Oregon" caption="Port Orford cedar (*Chamaecyparis lawsoniana*) in its native habitat — Francis Shrader Old Growth Trail, Oregon. Source: Wikimedia Commons, Jami Dwyer, CC BY-SA 2.0." >}}
 
 ### GPI: weighing and sorting the batch
 
@@ -81,9 +81,9 @@ In practice:
 
 A shaft that springs back to a bow after three correction attempts is telling you something. Either the bend is moisture-related (see the Validation scenario for this module) or the grain is genuinely off-axis and the shaft will never hold straight under shooting stress. Set it aside — do not invest taper cuts in it.
 
-{{< visual-needed what="Heel-of-hand straightening technique" youtube="straightening wood arrow shafts heel of hand" wikimedia="arrow straightening" >}}
-A close-up of hands working a slight bend out of a wood arrow shaft — locate the bend by sighting down the shaft, place the bend against the heel of your palm, and apply controlled, gradual pressure while rotating. Watch a tutorial; the motion is hard to describe in words.
-{{< /visual-needed >}}
+{{< youtube w8ReYM_4s0s >}}
+
+*Wood Arrow Making 101 EP2 — Hand Straightening. Watch the motion: sighting down the shaft, locating the apex of the bend, and applying controlled pressure with the heel of the palm.*
 
 ### Point taper and nock taper
 
@@ -107,9 +107,9 @@ flowchart LR
 
 **Order of operations:** Cut the point taper first (since this requires knowing finished length), then cut the nock taper. Cutting nock taper first would make it harder to measure from the nock valley cleanly.
 
-{{< visual-needed what="5° point taper and 11° nock taper profiles, side by side" youtube="wood arrow taper tool 5 degree 11 degree" wikimedia="arrow taper" >}}
-The point end takes a shallow 5° taper to seat a glue-on field point. The nock end takes a steeper 11° taper to seat a plastic nock. Same taper tool, different bushings — the tool's product manual usually has the angle diagram.
-{{< /visual-needed >}}
+{{< youtube ZvVMXApjk3Q >}}
+
+*Wood Arrow Making 101 EP3 — Tapering. Demonstrates both the 5° point taper and the 11° nock taper using a standard taper tool.*
 
 ### Footing: what it is, and why not here
 
@@ -121,9 +121,9 @@ A {{< gloss "Footing" "footed arrow" >}} is a beautiful piece of craft. It is al
 
 Learn what footing is. Know when it is the right call. Do not foot these 24 shafts.
 
-{{< visual-needed what="Footed arrow with hardwood splice" youtube="footed wood arrow making" wikimedia="footed arrow" >}}
-A footed arrow has a 3–6 inch dense hardwood splice (osage, hornbeam, or hickory) glued onto the point end of the cedar shaft before tapering. The splice is usually visible as a dark band where the species color changes. You will not be footing the 24-arrow target set, but recognizing one when you see it matters.
-{{< /visual-needed >}}
+{{< youtube 8okMfmAsxNw >}}
+
+*DIY Hardwood Footed Arrow Shafts for Traditional Archery. Shows the splice cut, glue-up, and final shaping. Worth watching once even though you won't be footing this build — recognizing a footed arrow in the wild is a useful skill.*
 
 ## Cedar vs. {{< gloss "Douglas fir" "Douglas fir" >}}: when to choose which
 

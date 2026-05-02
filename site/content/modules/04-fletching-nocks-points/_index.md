@@ -51,9 +51,9 @@ For your matched set, every one of the 72 feathers must come from the **left win
 
 **The left-handed shooter's convention:** As a left-handed archer you draw with your right hand and hold the bow with your left. The bow shelf is on the left side of the riser. At full draw, the {{< gloss "Cock feather" "cock feather" >}} (the single feather perpendicular to the nock slot) points away from the bow shelf — the same convention used by right-handed archers, just mirrored. What changes is the wing direction: left-handed archers use **left-wing** feathers, which mate correctly with a **left-offset** or **left-helical** clamp. Your setup uses a left-offset clamp, which is the correct choice.
 
-{{< visual-needed what="Left-wing vs right-wing turkey feather curl direction" youtube="left wing right wing feather fletching difference" wikimedia="turkey feather fletching" >}}
-Hold a feather quill toward you, tip away. A **left-wing** feather curves to your left; a **right-wing** feather curves to your right. As a left-handed shooter you need left-wing feathers exclusively — every one of your 72 feathers (24 arrows × 3 feathers). Mixing wings produces feathers fighting each other and erratic flight no tuning can fix.
-{{< /visual-needed >}}
+{{< youtube lI3ghIxs7mQ >}}
+
+*Feather Fletchings the basics — how to identify right and left wing feathers. The quill-curl direction is unambiguous once you've seen it side-by-side. As a left-handed shooter you need left-wing feathers exclusively — all 72 of them (24 arrows × 3).*
 
 **How to tell them apart at purchase:** Most fletching suppliers label their bags "LW" (left wing) or "RW" (right wing). If the label is missing, hold the feather quill-toward-you, tip-away: left-wing curves left. Before loading your jig, lay all 24 sets of three feathers on your bench and verify every quill curves the same direction. This takes five minutes and prevents fletching 24 arrows you have to strip.
 
@@ -101,9 +101,9 @@ flowchart TD
 
 Your fletching jig holds the shaft in a fixed cradle. A moveable feather clamp arm loads one feather at a time. The index ring on the jig rotates the shaft (or the clamp arm) by exactly 120 degrees between feathers, producing a symmetrical three-fletch configuration.[^3rivers-jig]
 
-{{< visual-needed what="Fletching jig with offset clamp loaded" youtube="fletching jig offset clamp setup turkey feather" wikimedia="fletching jig" >}}
-The jig holds the shaft on a central spindle that indexes 120° between fletches. The offset clamp grips a feather along its base, holds it at a 2–3° angle to the shaft axis, and lowers it into position. Every component matters: the nock receiver (alignment), the indexing ring (rotation), the clamp angle (offset amount), the feather-placement stop (distance from nock valley). Bohning and Bitzenberger jigs both have setup videos worth watching before you load your first feather.
-{{< /visual-needed >}}
+{{< youtube 5skLeaALbAY >}}
+
+*Wood Arrow Making 101 EP10 — Fletching. Walk-through of jig loading, clamp offset, glue application, and the 120° indexing sequence. The cleanest end-to-end demo of the technique you're about to do for 24 shafts.*
 
 **Calibration check before the first shaft:**
 
@@ -158,9 +158,9 @@ A {{< gloss "Nock insert" >}} (glue-on {{< gloss "Nock insert" "plastic nock" >}
 
 {{< gloss "Glue-on field point" >}} installation uses {{< gloss "Hot-melt adhesive" "hot-melt adhesive" >}} applied via an alcohol burner. Hot-melt is the correct choice here — it bonds strongly, is field-removable (reheat to break the bond), and allows resetting a crooked point without damaging the {{< gloss "Point taper" >}}.[^3rivers-points]
 
-{{< visual-needed what="Glue-on field point installation with hot-melt cement" youtube="glue on field point hot melt wood arrow" wikimedia="arrow field point" >}}
-Heat a stick of hot-melt cement, apply it to the cleaned shaft taper, and seat the field point while rotating slowly so the cement cures evenly. Re-heat the point briefly with an alcohol burner to release if you need to remove it later. A roll-test on a flat surface checks tip alignment — wobble means the point is off-axis and needs reseating.
-{{< /visual-needed >}}
+{{< youtube CsRGtimTJ_Y >}}
+
+*Wood Arrows — How to Glue On Points. Demonstrates heating the hot-melt stick, coating the taper, and the seat-and-rotate motion. A roll-test on a flat bench (visible at the end) is your alignment check — wobble means reseat.*
 
 **Installation sequence:**
 
@@ -192,7 +192,7 @@ Your finished arrow (with nock, feathers, and point installed):
 
 Rest the arrow across a narrow fulcrum — a ruler edge, a pencil, or a knife blade laid flat. Slide the arrow until it balances perfectly horizontal. Mark this point with a pencil.
 
-{{< figure src="https://upload.wikimedia.org/wikipedia/commons/4/4e/19th_century_knowledge_archery_balance_point_of_arrows.jpg" alt="19th-century technical diagram showing the balance point of arrows" caption="Balance point of arrows — historical diagram from Ford & Butt, *The Theory and Practice of Archery* (1887). Source: Wikimedia Commons, Public Domain." >}}
+{{< figure src="balance-point-diagram.jpg" alt="19th-century technical diagram showing the balance point of arrows" caption="Balance point of arrows — historical diagram from Ford & Butt, *The Theory and Practice of Archery* (1887). Source: Wikimedia Commons, Public Domain." >}}
 
 Measure from the **nock valley** to the balance point mark. Suppose you measure **16.8 inches**.
 

@@ -154,9 +154,9 @@ A nock that cracks, loosens, or rotates is the most common failure in a target s
 6. Press the new nock on firmly, rotating it to align the nock groove with the {{< gloss "Cock feather" "cock feather" >}} (the single feather that runs perpendicular to the string — on a left-handed bow with left-wing feathers, confirm the rotation matches the original orientation).
 7. Let cure for the adhesive's specified time before shooting.
 
-{{< visual-needed what="Nock-end split — crack patterns and measurement zones" youtube="cracked nock wood arrow inspection" wikimedia="cracked arrow nock" >}}
-A nock-end split runs along the grain from the nock slot toward the body of the shaft. Hairline cracks under ~1/4 inch are usually repairable by re-tapering and re-nocking. Cracks longer than 2 inches, or any visible split that has run past the taper into the shaft body, are a cull — that arrow will fail unpredictably.
-{{< /visual-needed >}}
+{{< youtube O-jAdPVzCOI >}}
+
+*How to repair a plastic nock on a wood arrow. Demonstrates removing a damaged nock, recutting the nock taper, and bonding a fresh nock. The same workflow handles a hairline split — anything longer than ~1/4 inch and you're recutting beyond the crack to find clean wood.*
 
 ### 2. Loose or Lost Field Point
 

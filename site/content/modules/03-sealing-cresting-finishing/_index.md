@@ -63,9 +63,9 @@ Setup checklist:
 4. Thread a wire hook — a straightened paper clip works — through the nock valley of each shaft. This is your hanging mechanism after dipping.
 5. Place a drip catch under the tube. A sheet of cardboard or a tray lined with wax paper collects drips and keeps the workspace clean.
 
-{{< visual-needed what="Dip tube setup — vertical tube, hanging line, drip catcher" youtube="arrow dip tube setup wood arrow finish" wikimedia="arrow finish dipping" >}}
-A dip tube is a tall vertical tube (often PVC or aluminum) holding finish, with a hanging line above to lower the shaft into and pull it out at controlled speed. A drip catcher below collects what runs off when you stop. Manufacturer videos from Bohning and 3Rivers Archery walk through a typical setup.
-{{< /visual-needed >}}
+{{< youtube MSOAs-7rrdA >}}
+
+*DIY Arrow Dipping Tube For Wood Arrows. Shows a complete tube build (PVC, cap, mounting) and the dipping motion — vertical tube, hanging line, drip catcher.*
 
 ### The dipping sequence
 
@@ -125,7 +125,7 @@ The classic crest layout for a target arrow reads like this from nock to point:
 - **Accent color bands** (medium — 3/8–1/2 inch each): applied second, one or two bands with a clean edge against the base color.
 - **Separator lines** (thin — 1/16 inch): applied last with a fine liner brush or a {{< gloss "Cresting jig" "cresting jig" >}} with a thin pin brush.
 
-{{< figure src="https://upload.wikimedia.org/wikipedia/commons/8/89/Crestings.JPG" alt="Traditional arrow shafts with cresting bands — colored ring patterns near the fletching for matched-set identification" caption="Examples of arrow cresting — decorative bands near the fletching used to identify a matched set. Source: Wikimedia Commons, StromBer, CC BY-SA 3.0." >}}
+{{< figure src="cresting-examples.jpg" alt="Traditional arrow shafts with cresting bands — colored ring patterns near the fletching for matched-set identification" caption="Examples of arrow cresting — decorative bands near the fletching used to identify a matched set. Source: Wikimedia Commons, StromBer, CC BY-SA 3.0." >}}
 
 The 3Rivers Archery cresting guide states the key craft warning directly: **"Apply wider bands first, then move to thinner bands, with thin separator lines between colors to give the crest a clean finished look."**[^cresting-technique] This sequence matters because a thin separator line painted over an uncured wide band will bleed — the thin brush picks up the still-wet base color and smears it into the separator. Always let each band cure to touch-dry before applying the next.
 
