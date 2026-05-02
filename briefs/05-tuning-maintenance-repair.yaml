@@ -1,0 +1,60 @@
+weight: 5
+title: "Tuning, Maintenance, and Repair: Proving They Fly Right and Bringing Them Back When They Break"
+short_title: "Tuning and Repair"
+driving_question: "How do I prove these 24 arrows fly right, keep them flying right, and recover them when they break?"
+concepts:
+  - "Bareshaft tuning"
+  - "Nocking point setting"
+  - "Centershot alignment"
+  - "Shaft repair (crack, split, tip)"
+  - "Feather re-fletching and adhesive repair"
+contrast:
+  alternative: "Paper tuning"
+  when_alternative_wins: "Paper tuning gives an immediate visual read on arrow orientation at the moment of bow clearance — useful for diagnosing form-related issues such as finger pinch or torque that bareshaft groups average out. It is also faster for a single-arrow diagnostic session when you need a quick answer on a specific shaft."
+reading:
+  primary:
+    url: "https://archery360.com/2019/07/10/how-to-bare-shaft-tune-your-recurve-or-longbow/"
+    section: "What It Reveals and Horizontal Adjustments sections — the key diagnosis table is here: bare shaft left of fletched group means too stiff; right means too weak (reverse these readings for a left-handed archer)."
+  secondary:
+    url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+    section: "Nocking point and spine adjustment sections — the porpoising/fishtailing diagnostic and the point-weight adjustment method for fine-tuning dynamic spine without buying different shafts."
+exercise_goal: |
+  The learner shoots a bareshaft tuning session to verify the matched set, sets the nocking point, diagnoses any tuning issues, then works through the repair workflows for the four most common failure modes in a target arrow set.
+
+  Bareshaft tuning session setup:
+    - [TODO: Embed a labeled diagram showing the bareshaft tuning target setup — a 10–15 yard distance, one bare shaft shot alongside a fletched group, with annotated arrows showing where left/right impact indicates stiff/weak spine and where high/low impact indicates nocking point error; Archery360's tuning article includes a diagram; Wikimedia Commons search "bareshaft tuning" or "arrow tuning target" as alternatives]
+    - For a left-handed archer: bare shaft impacting RIGHT of the fletched group indicates the spine is too stiff (opposite of the right-handed convention). The module-builder must state this clearly and show both conventions in a reference table.
+    - The module-builder must also explain the nocking point starting position: approximately 1/2 inch above the arrow shelf (measured with a T-square), adjusted up or down based on bare shaft vertical deviation.
+    - [TODO: Show the learner the point-weight adjustment method from the 3Rivers spine adjustment section as a first resort before buying different shafts: if bare shaft is right of group (stiff, for left-handed), add heavier points; if left of group (weak), try lighter points. The learner records the test result and the adjustment they made]
+
+  Tuning decision tree:
+    - The module-builder must build a one-page decision tree the learner can use at the range: bare shaft impact position → diagnosis → first adjustment → re-test. Cover: stiff (right impact, left-handed), weak (left impact, left-handed), nocking point too high (bare shaft low), nocking point too low (bare shaft high).
+    - [TODO: Provide a blank tuning log template — columns: session date, distance, bare shaft position relative to fletched group, diagnosis, adjustment made, result after adjustment — the learner fills this in during the tuning session]
+
+  Repair workflows — the four most common failures in a 24-arrow target set:
+
+  1. Broken or loose nock: heat the nock end with a heat gun (not a flame — flames char the wood), slide off the old nock with pliers, clean the taper, re-apply nock cement, seat a new nock, align to cock feather, let cure.
+
+  2. Loose or lost field point: apply heat to the point end, pull the old point with pliers while the hot-melt is liquid, clean the taper with alcohol, re-apply hot-melt, seat the new or recovered point, rotate for alignment, roll-test before returning to the set.
+
+  3. Feather lifting or lost feather: peel the affected feather back cleanly, clean the shaft surface, re-fletch in the jig using the same adhesive and clamp time. If one feather is lost and no replacement matching the batch's left-wing shield-cut profile is available, quarantine that arrow rather than putting a mismatched feather on it — a single non-matching feather in the set introduces inconsistency that defeats the purpose of a matched build.
+
+  4. Shaft split at the nock end: inspect the split length. A hairline crack under 1/2 inch can sometimes be stabilized with thin CA glue wicked in under clamp pressure, but this is a judgment call — the nock end takes repeated string impact and a repaired split there is a weak point. The honest practitioner call is to retire that shaft from the target set and replace it. The module-builder must state this clearly: a cracked nock end that lets go at full draw can drive a splinter into the draw hand.
+
+    - [TODO: Embed a labeled photograph or diagram of a nock-end split — showing a typical crack propagation pattern and the measurement zone (length of split relative to the nock taper) that determines repair vs. retire; Wikimedia Commons or archery forum image archives; if coverage is thin, a clearly labeled diagram (AI-generated, labeled as such) is acceptable]
+
+  Ongoing maintenance routine:
+    - The module-builder must give the learner a simple post-session inspection checklist: check every nock for cracks before nocking; roll each arrow on a flat surface and watch for wobble at the tip; run a thumb along each feather trailing edge; check shaft for new bends (store arrows vertically or horizontally in a dry quiver, never leaning at an angle).
+
+  The exercise ends with a completed tuning log showing at least one bareshaft session result, one documented adjustment, and a re-test result. The learner also walks through at least one simulated repair on an arrow not in the primary set (a retired shaft from the straightening reject pile, if any are available).
+validation_scenario: |
+  You shoot a bareshaft group at 15 yards. The bare shaft consistently impacts about 4 inches to the left of your fletched group. You're left-handed. You haven't changed your point weight or shaft length since finishing the set.
+
+  Good answer covers:
+    - For a left-handed archer, bare shaft left of the fletched group means the spine is too weak — the arrow is not recovering cleanly through archer's paradox and is landing farther from center in the direction of spine collapse.
+    - First adjustment to reach for: try a lighter point (drop from 100 gr to 75 gr if available) as a quick dynamic spine stiffener before buying different shafts. Lighter points stiffen dynamic spine. If the impact moves toward the fletched group, the diagnosis is confirmed.
+    - Second check: confirm the bow's nocking point is set correctly (1/2 inch above shelf) and that the brace height is within the manufacturer's spec range — brace height outside spec changes the effective paradox arc and can manifest as apparent spine weakness even when the shaft spec is correct.
+    - Honest scope boundary: if the adjustment moves the bare shaft close to the fletched group but not fully into it, the remaining offset may reflect consistent form variation (the archer's release is introducing a small lateral torque) rather than pure spine mismatch. At that point, paper tuning at close range can isolate whether the residual error is spine or form.
+    - What the learner should NOT do first: order a different spine batch. That is the last resort after exhausting point weight, nocking point, and brace height adjustments — all of which can be done on the current set without additional cost.
+prior_ends_with: "The learner has 24 fully assembled arrows — left-wing shield-cut three-fletch with offset, glue-on plastic nocks, 100-grain glue-on field points — with FOC verified and tip alignment confirmed. They are ready to shoot a tuning group and establish the maintenance and repair workflow."
+next_expects: "The learner has shot a bareshaft tuning session confirming spine match for the 40 lb bow, documented any adjustments made, and can perform all four primary repair operations on the matched set. The 24-arrow build is complete, tuned, and the learner holds practitioner-level maintenance competency."

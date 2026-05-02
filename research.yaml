@@ -1,0 +1,685 @@
+topic: "Traditional wood target arrows — building, tuning, and maintenance"
+goal: "Build, tune, and maintain ~24 beautiful traditional wood target arrows from parts. Be competent enough to assemble from parts, fletch, repair (broken arrows / tips / feathers), and tune to my bow. Teaching others is a future goal, not a near-term test."
+created: "2026-05-01T00:00:00Z"
+researcher_version: "0.4.17"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# GLOSSARY
+# Canonical definitions for all module-builders. Every term has at least one
+# references[] link so readers have somewhere to go for additional depth.
+# ─────────────────────────────────────────────────────────────────────────────
+glossary:
+  - term: "Spine"
+    definition: "The measured stiffness of an arrow shaft; properly matched spine allows the arrow to flex correctly around the bow riser and recover to straight flight downrange."
+    aliases: ["arrow stiffness", "spine weight"]
+    references:
+      - label: "Easton Archery — Making Sense of Arrow Spine"
+        url: "https://eastonarchery.com/2014/07/making-sense-of-arrow-spine/"
+      - label: "ShootingTime — Arrow Spine: Static, Dynamic, and How to Adjust"
+        url: "https://shootingtime.com/archery/arrow-spine/"
+
+  - term: "Static spine"
+    definition: "A standardized laboratory measurement of shaft stiffness: the deflection in inches (×1000 = spine rating) when an 880-gram (1.94 lb) weight is suspended from the center of a shaft supported 28 inches apart."
+    references:
+      - label: "Easton Archery — Making Sense of Arrow Spine"
+        url: "https://eastonarchery.com/2014/07/making-sense-of-arrow-spine/"
+      - label: "ShootingTime — Arrow Spine: Static, Dynamic, and How to Adjust"
+        url: "https://shootingtime.com/archery/arrow-spine/"
+
+  - term: "Dynamic spine"
+    definition: "The effective stiffness of an arrow during the actual shot — how it actually bends and recovers as it accelerates off the bow. Dynamic spine is influenced by shaft length, point weight, draw weight, bow design, and release style, and is what truly determines whether an arrow flies well."
+    references:
+      - label: "Easton Archery — Making Sense of Arrow Spine"
+        url: "https://eastonarchery.com/2014/07/making-sense-of-arrow-spine/"
+      - label: "Stu Miller's Dynamic Spine Calculator"
+        url: "https://heilakka.com/stumiller/"
+
+  - term: "AMO standard"
+    definition: "The Archery Manufacturers Organization's legacy spine test protocol for wood arrows: a shaft supported at 26-inch centers with a 2-pound weight at the center; spine is reported as 26 divided by deflection in inches (e.g., 0.5\" deflection = 52-pound spine)."
+    aliases: ["AMO spine standard", "wood arrow spine standard"]
+    references:
+      - label: "ShootingTime — Arrow Spine: Static, Dynamic, and How to Adjust"
+        url: "https://shootingtime.com/archery/arrow-spine/"
+
+  - term: "Draw weight"
+    definition: "The peak force in pounds required to draw a bow to a specified draw length (commonly 28 inches for traditional bows). Draw weight is the primary input for spine selection — heavier bows require stiffer arrows."
+    references:
+      - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up"
+        url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+      - label: "Rose City Archery — Spine Weight Chart"
+        url: "https://www.rosecityarchery.com/pages/spine-weight-recurve-longbow-compound-bow-chart"
+
+  - term: "Draw length"
+    definition: "The distance from the nocking point on the string to the back of the bow (the side facing away from the archer) at full draw. Draw length directly affects arrow length, which in turn affects dynamic spine — one inch longer weakens dynamic spine by approximately 5 pounds."
+    references:
+      - label: "Rose City Archery — Spine Weight Chart"
+        url: "https://www.rosecityarchery.com/pages/spine-weight-recurve-longbow-compound-bow-chart"
+      - label: "ShootingTime — Arrow Spine: Static, Dynamic, and How to Adjust"
+        url: "https://shootingtime.com/archery/arrow-spine/"
+
+  - term: "FOC (front-of-center)"
+    definition: "The percentage of the arrow's total length by which the balance point lies forward of the physical midpoint of the shaft. Calculated as: FOC% = ((balance point − length/2) / length) × 100. Higher FOC improves downrange stability; for target traditional archery, 10–15% is a widely recommended range."
+    aliases: ["front-of-center", "FOC balance"]
+    references:
+      - label: "Easton Archery — What Is FOC and How Does It Affect Arrow Flight"
+        url: "https://eastonarchery.com/2014/06/foc/"
+      - label: "Easton Archery — Simple Guidelines to Correct Arrow Balance"
+        url: "https://eastonarchery.com/2022/06/the-simple-guidelines-to-correct-arrow-balance-foc/"
+      - label: "Lancaster Archery Supply — What Is F.O.C. and How Does It Affect My Arrows"
+        url: "https://lancasterarchery.com/blogs/guides-and-information/what-is-f-o-c-and-how-does-it-affect-my-arrows"
+
+  - term: "GPI (grains per inch)"
+    definition: "A weight-per-unit-length specification for arrow shafts, calculated as shaft weight in grains divided by shaft length in inches. Port Orford cedar at 11/32-inch diameter typically runs 10–15 GPI. GPI is used to compare shaft weights independently of length."
+    aliases: ["grains per inch"]
+    references:
+      - label: "Archery360 — How to Calculate Arrow Weight and Why"
+        url: "https://archery360.com/2018/06/14/how-to-calculate-arrow-weight-and-why/"
+      - label: "BobLeeBows — Arrow GPI vs GPP"
+        url: "https://bobleebows.com/arrows-critical-difference-gpi-gpp/"
+
+  - term: "GPP (grains per pound)"
+    definition: "The finished arrow's total weight in grains divided by the bow's draw weight in pounds. A midweight traditional arrow target is 6.5–8 GPP. Too light (under 5 GPP) risks bow damage and excessive noise; too heavy reduces trajectory and speed."
+    aliases: ["grains per pound", "arrow weight ratio"]
+    references:
+      - label: "BobLeeBows — Arrow GPI vs GPP"
+        url: "https://bobleebows.com/arrows-critical-difference-gpi-gpp/"
+      - label: "Archery360 — How to Calculate Arrow Weight and Why"
+        url: "https://archery360.com/2018/06/14/how-to-calculate-arrow-weight-and-why/"
+
+  - term: "Archer's paradox"
+    definition: "The phenomenon in which an arrow shot from a traditional bow — where the arrow must be offset to one side of the riser — nonetheless flies straight to the target because it flexes around the bow and recovers to the line of flight as it leaves the string. Correct spine matching is essential for this recovery to happen properly."
+    references:
+      - label: "Wikipedia — Archer's paradox"
+        url: "https://en.wikipedia.org/wiki/Archer%27s_paradox"
+      - label: "Northwoods Bowmen's Club — Archer's Paradox and Spine Stiffness"
+        url: "https://northwoodsbowmensclub.org/archers-paradox-and-spine-stiffness/"
+
+  - term: "Bareshaft tuning"
+    definition: "A tuning method in which one or more unfleteched (bare) shafts are shot alongside fletched arrows at the same aiming point. Where the bare shaft impacts relative to the fletched group reveals spine match (horizontal deviation) and nocking point position (vertical deviation) before feather corrections can hide errors."
+    references:
+      - label: "Archery360 — How to Bare-Shaft Tune Your Recurve or Longbow"
+        url: "https://archery360.com/2019/07/10/how-to-bare-shaft-tune-your-recurve-or-longbow/"
+      - label: "3Rivers Archery — Basic Shaft and Arrow Tuning (PDF)"
+        url: "https://www.3riversarchery.com/pdf/2011shafttuningchart.pdf"
+
+  - term: "Paper tuning"
+    definition: "A tuning method in which the archer shoots an arrow through a sheet of paper stretched taut on a frame. The tear pattern — bullet hole (ideal), tail-high, tail-low, tail-left, tail-right — indicates nocking point position and spine match at the moment the arrow passes through."
+    references:
+      - label: "Archery Supplier — Recurve Bow Tuning Guide: Bare Shaft, Paper & Walk-Back"
+        url: "https://archerysupplier.com/recurve-bow-tuning-guide/"
+      - label: "Archery360 — How to Bare-Shaft Tune Your Recurve or Longbow"
+        url: "https://archery360.com/2019/07/10/how-to-bare-shaft-tune-your-recurve-or-longbow/"
+
+  - term: "Walk-back tuning"
+    definition: "A tuning method in which the archer shoots from progressively greater distances (e.g., 5, 10, 15, 20 yards) at the same vertical aiming point. Consistent vertical grouping with horizontal drift identifies centershot alignment errors that spine and nocking point corrections alone cannot fix."
+    references:
+      - label: "Archery Supplier — Recurve Bow Tuning Guide: Bare Shaft, Paper & Walk-Back"
+        url: "https://archerysupplier.com/recurve-bow-tuning-guide/"
+      - label: "Exo Mtn Gear — Comparing Bow Tuning Methods"
+        url: "https://exomtngear.com/blogs/article/comparing-bow-tuning-methods"
+
+  - term: "Footing"
+    definition: "A short splice of dense hardwood (commonly hornbeam, osage orange, or bamboo) glued onto the point end of a softer-wood shaft. Footing reinforces the area most likely to split on target impact while preserving the shaft's overall flexibility and lighter weight."
+    aliases: ["footed arrow", "point-end splice"]
+    references:
+      - label: "Legend Archery — Footed Arrow"
+        url: "https://legendarchery.com/pages/footed-arrow"
+      - label: "Wikipedia — Arrow"
+        url: "https://en.wikipedia.org/wiki/Arrow"
+
+  - term: "Nock taper"
+    definition: "The 11-degree taper machined or cut into the back end of a wood shaft to accept a friction-fit glue-on plastic nock. The taper angle is standardized so that nocks from different manufacturers seat consistently."
+    aliases: ["nock end taper", "11-degree taper"]
+    references:
+      - label: "Stickbow.com — Point and Nock Tapers"
+        url: "http://www.stickbow.com/stickbow/arrowbuilding/tapertools.html"
+      - label: "3Rivers Archery — Bearpaw Taper Tool"
+        url: "https://www.3riversarchery.com/bearpaw-taper-tool.html"
+
+  - term: "Point taper"
+    definition: "The 5-degree taper cut into the front end of a wood shaft to accept a friction-fit glue-on field point or other tapered point. Secured with hot-melt adhesive, it allows point removal and replacement in the field."
+    aliases: ["point-end taper", "5-degree taper"]
+    references:
+      - label: "Stickbow.com — Point and Nock Tapers"
+        url: "http://www.stickbow.com/stickbow/arrowbuilding/tapertools.html"
+      - label: "3Rivers Archery — Building Wood Arrows"
+        url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+
+  - term: "Self nock"
+    definition: "A nock cut directly into the wood of the shaft itself — a simple saw cut, or a reinforced cut with a hardwood insert glued in — rather than a separate glued-on plastic nock. Traditional in aesthetic; requires careful grain alignment and periodic inspection for splits."
+    references:
+      - label: "TradTalk Forums — Self Nocks"
+        url: "https://www.tradtalk.com/threads/self-nocks.142265/"
+      - label: "TradTalk Forums — Tapered 11-degree shafts made into self nocks"
+        url: "https://www.tradtalk.com/threads/tapered-11-degrees-shafts-made-into-self-nocks.143550/"
+
+  - term: "Nock insert"
+    definition: "A small plastic nock glued onto the tapered nock end of a wood shaft. More durable and consistent than a self nock; the standard choice for target arrows where reliability over aesthetics is preferred."
+    aliases: ["glue-on nock", "plastic nock"]
+    references:
+      - label: "3Rivers Archery — Building Wood Arrows"
+        url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+      - label: "Bohning — The Nock Guide (PDF)"
+        url: "https://www.bohning.com/wp-content/uploads/2019/09/Nock_Guide.pdf"
+
+  - term: "Tapered shaft"
+    definition: "An arrow shaft that is wider at one end than the other — typically tapered toward both the nock end and the point end from a wider center. The most common wood shaft profile for traditional target arrows; the taper creates the nock and point seating surfaces."
+    references:
+      - label: "3Rivers Archery — Building Wood Arrows"
+        url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+      - label: "3Rivers Archery — Arrow Shafting"
+        url: "https://www.3riversarchery.com/buy/arrows/arrow-shafting"
+
+  - term: "Parallel shaft"
+    definition: "An arrow shaft with uniform diameter along its entire length. Parallel shafts require separate taper tools to cut nock and point seats; they are common in cedar shafts sold pre-tapered or left for the builder to taper to specification."
+    references:
+      - label: "3Rivers Archery — Port Orford Cedar Wood Arrow Shafts"
+        url: "https://www.3riversarchery.com/port-orford-cedar-wood-arrow-shafts.html"
+
+  - term: "Port Orford cedar"
+    definition: "Chamaecyparis lawsoniana, a Pacific Northwest softwood regarded as the premier natural material for traditional arrow shafts. Valued for its consistently straight grain, high strength-to-weight ratio, and superior modulus of elasticity — it recovers quickly from the flex of the shot and returns to straight flight faster than most alternatives."
+    aliases: ["POC", "Port Orford cedar shaft"]
+    references:
+      - label: "3Rivers Archery — Port Orford Cedar Wood Arrow Shafts"
+        url: "https://www.3riversarchery.com/port-orford-cedar-wood-arrow-shafts.html"
+      - label: "Wapiti Archery POC — Premium Weight Matched Port Orford Cedar Shafts"
+        url: "https://wapitiarcherypoc.com/product/premium-weight-matched-port-orford-cedar-shafts/"
+
+  - term: "Sitka spruce"
+    definition: "Picea sitchensis, a Pacific Northwest softwood used for arrow shafts. Stiffer and lighter than Port Orford cedar for a given diameter; historically favored for flight arrows. Less common today but available from specialty shaft makers."
+    references:
+      - label: "Surewood Shafts — Choosing the Correct Spine"
+        url: "https://surewoodshafts.com/pages/choosing-the-correct-spine"
+      - label: "Wikipedia — Arrow"
+        url: "https://en.wikipedia.org/wiki/Arrow"
+
+  - term: "Douglas fir"
+    definition: "Pseudotsuga menziesii, the primary material for Surewood Shafts' premium wood arrow shafts. Denser than Port Orford cedar, producing heavier arrows that some archers prefer for downrange momentum; requires disc-sander tapering rather than blade-style taper tools because of its grain structure."
+    references:
+      - label: "Surewood Shafts — Premium Wood Arrow Shafts"
+        url: "https://surewoodshafts.com/collections/premium-arrow-shafts"
+      - label: "ArcheryPast — Douglas Fir Hunter Grade Wood Arrow Shafts by Surewood Shafts"
+        url: "https://archerypast.com/products/douglas-fir-hunter-grade-wood-arrow-shafts-by-surewood-shafts"
+
+  - term: "Feather fletching"
+    definition: "Natural feathers (typically turkey) used as arrow vanes. Feathers collapse on contact with the bow shelf and recover instantly, making them the preferred choice for off-the-shelf shooting on traditional bows. The rough side of the feather faces outward on the arrow shaft."
+    aliases: ["natural feather", "turkey feather"]
+    references:
+      - label: "Wikipedia — Fletching"
+        url: "https://en.wikipedia.org/wiki/Fletching"
+      - label: "3Rivers Archery — Building Wood Arrows"
+        url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+
+  - term: "Left-wing vs right-wing feather"
+    definition: "Feathers from the left wing of a bird curve opposite to those from the right wing. All three feathers on an arrow must come from the same wing; mixing wings causes the arrow to fight itself in flight. Convention: right-handed archers typically use right-wing feathers with right-handed helical clamps, and vice versa — though the actual direction of spin matters less than consistency."
+    references:
+      - label: "3Rivers Archery — Building Wood Arrows"
+        url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+      - label: "Wikipedia — Fletching"
+        url: "https://en.wikipedia.org/wiki/Fletching"
+
+  - term: "Shield cut"
+    definition: "A feather fletching profile with a flat leading edge and a squared-off or slightly angled trailing tip, resembling a medieval shield in silhouette. Shield-cut feathers carry more surface area than parabolic cuts, providing more drag and faster stabilization — useful when spine is slightly off or when shooting off the shelf."
+    references:
+      - label: "ArcheryTalk — Fletching: Shield vs. Parabolic"
+        url: "https://www.archerytalk.com/threads/fletching-shield-vs-parabolic.3521098/"
+      - label: "Legend Archery — Parabolic Fletching"
+        url: "https://legendarchery.com/pages/parabolic-fletching"
+
+  - term: "Parabolic cut"
+    definition: "A feather fletching profile with a smoothly curved leading and trailing edge — the classic symmetrical 'half-moon' shape. Less drag than shield cut, which preserves a few feet per second of velocity and produces slightly less noise. The standard profile for most target arrows."
+    references:
+      - label: "Legend Archery — Parabolic Fletching"
+        url: "https://legendarchery.com/pages/parabolic-fletching"
+      - label: "ArcheryTalk — Fletching: Shield vs. Parabolic"
+        url: "https://www.archerytalk.com/threads/fletching-shield-vs-parabolic.3521098/"
+
+  - term: "Helical fletching"
+    definition: "Feathers or vanes attached with a deliberate twist (curvature) around the circumference of the shaft, creating maximum arrow spin in flight. Helical gives the best stabilization and tightest groups at distance; requires a fletching jig with a helical clamp. The standard choice for target wood arrows where speed loss is acceptable."
+    aliases: ["helical offset"]
+    references:
+      - label: "RecurveArchery.net — Arrow Fletching Types and Offsets"
+        url: "https://recurvearchery.net/arrow-fletching-types-and-offsets-improve-accuracy-and-stability/"
+      - label: "Wikipedia — Fletching"
+        url: "https://en.wikipedia.org/wiki/Fletching"
+
+  - term: "Offset fletching"
+    definition: "Feathers or vanes attached at a slight angle (2–3°) to the shaft axis without curving around the shaft. Offset induces spin and is easier to achieve with simpler jig clamps than true helical; a reasonable compromise between stabilization and setup simplicity."
+    references:
+      - label: "RecurveArchery.net — Arrow Fletching Types and Offsets"
+        url: "https://recurvearchery.net/arrow-fletching-types-and-offsets-improve-accuracy-and-stability/"
+
+  - term: "Fletching jig"
+    definition: "A tool that holds the arrow shaft and a single feather clamp in a fixed geometric relationship — controlling the feather's position (distance from nock), rotation (120° spacing for three-fletch), and angle (straight, offset, or helical) — while the adhesive sets."
+    references:
+      - label: "3Rivers Archery — Fletching Templates"
+        url: "https://www.3riversarchery.com/3rivers-fletching-templates.html"
+      - label: "3Rivers Archery — Building Wood Arrows"
+        url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+
+  - term: "Glue-on field point"
+    definition: "A tapered metal point with a conical bore that slides onto the 5-degree point taper and is secured with hot-melt adhesive. Field points are designed for target use — they punch into foam or burlap targets cleanly and pull out without damaging the shaft. Available in a range of weights (typically 75–125 grains for target use)."
+    aliases: ["tapered field point", "hot-melt point"]
+    references:
+      - label: "Stickbow.com — Point and Nock Tapers"
+        url: "http://www.stickbow.com/stickbow/arrowbuilding/tapertools.html"
+      - label: "3Rivers Archery — Building Wood Arrows"
+        url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+
+  - term: "Dip tube"
+    definition: "A length of PVC or metal tube long enough to fully submerge an arrow shaft. Used with liquid finishes (gasket lacquer, shellac, polyurethane) to coat the entire shaft in a single smooth, even pass. Multiple dip coats — with light sanding between — produce a durable moisture barrier."
+    references:
+      - label: "ArcheryTalk — Which Wooden Arrow Sealer and Why"
+        url: "https://www.archerytalk.com/threads/which-wooden-arrow-sealer-why.2241698/"
+      - label: "TradBow.com — Question About Wood Arrow Finishes"
+        url: "https://tradbow.com/forums/topic/question-about-wood-arrow-finishes/"
+
+  - term: "Sealer"
+    definition: "A protective finish applied to a wood arrow shaft to prevent moisture absorption, which causes warping and spine drift. Common options: shellac (fast-drying, works under most adhesives), polyurethane (durable, available in wipe-on or dip formulations), and gasket lacquer (fast, high-gloss, traditional dip-tube choice)."
+    aliases: ["shaft finish", "arrow finish"]
+    references:
+      - label: "ArcheryTalk — Arrow Building Finishes"
+        url: "https://www.archerytalk.com/threads/arrow-building-finishes.2410074/"
+      - label: "ArcheryTalk — Which Wooden Arrow Sealer and Why"
+        url: "https://www.archerytalk.com/threads/which-wooden-arrow-sealer-why.2241698/"
+
+  - term: "Cresting"
+    definition: "Decorative bands of color painted on the shaft between the fletching and the crest (the solid base color band just forward of the fletching). Cresting historically identified arrows to their owner; today it is a mark of craftsmanship and personalisation. Applied with a spinning crester jig and fine liner brushes, then sealed with a clear topcoat."
+    aliases: ["crown", "crest bands"]
+    references:
+      - label: "3Rivers Archery — How to Arrow Cresting"
+        url: "https://www.3riversarchery.com/blog/how-to-arrow-cresting/"
+
+  - term: "Serving"
+    definition: "A tight wrapping of thread applied over the bowstring at the nocking point zone and at the loop ends. Center serving protects the string from arrow-nock wear; loop serving reinforces the loops against the limb tips. Nocking-point serving is also used to build a thread nock set as an alternative to a brass crimp-on nock."
+    references:
+      - label: "Legend Archery — Center Serving"
+        url: "https://legendarchery.com/pages/center-serving"
+      - label: "3Rivers Archery — How to Serve a Bow String"
+        url: "https://www.3riversarchery.com/blog/how-to-serve-a-bow-string/"
+
+  - term: "Brace height"
+    definition: "The distance from the deepest part of the bow grip to the bowstring when the bow is strung and at rest. Brace height affects arrow paradox duration, finger clearance, and string slap risk. Most traditional longbows prefer 6–7 inches; recurves typically 7–9 inches depending on limb design."
+    aliases: ["fistmele"]
+    references:
+      - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up"
+        url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+      - label: "BobLeeBows — Brace Height / Fistmele Settings"
+        url: "https://bobleebows.com/brace-height-fistmele-settings/"
+
+  - term: "Centershot"
+    definition: "The horizontal alignment of the arrow rest or shelf relative to the bow's centerline. A bow is 'center shot' when the arrow's centerline passes through the bowstring's centerline; traditional bows are only partially cut-through and rely on archer's paradox to correct the remaining offset."
+    references:
+      - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up"
+        url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+      - label: "Wikipedia — Archer's paradox"
+        url: "https://en.wikipedia.org/wiki/Archer%27s_paradox"
+
+  - term: "Bow window"
+    definition: "The cutaway section of the riser above the grip that allows the arrow to pass closer to the bow's centerline, reducing (but not eliminating) the offset that produces archer's paradox. The depth of the bow window directly affects how much spine correction is needed in shaft selection."
+    references:
+      - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up"
+        url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+      - label: "Wikipedia — Archer's paradox"
+        url: "https://en.wikipedia.org/wiki/Archer%27s_paradox"
+
+  - term: "Nocking point"
+    definition: "The marked or built-up location on the bowstring where the arrow nock is consistently placed before each shot. Typically set approximately 1/2 inch above the arrow shelf (measured with a T-square). A brass crimp-on nock set or a tied thread serving are the two common methods."
+    references:
+      - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up"
+        url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+      - label: "60X Custom Strings — How to Set a Nocking Point With a Bow Square"
+        url: "https://www.60xcustomstrings.com/blog/how-to-set-a-nocking-point-with-a-bow-square/"
+
+# ─────────────────────────────────────────────────────────────────────────────
+# SOURCES
+# Authoritative reading list. Every entry has title, url, sections[] with
+# excerpt. Module-builders cite from this list; they do not re-research.
+# ─────────────────────────────────────────────────────────────────────────────
+sources:
+  - title: "3Rivers Archery — Building Wood Arrows"
+    url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+    authority: "well-known-retailer-with-educational-content"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "straightening"
+        anchor: "#straightening"
+        why: "Describes shaft straightening technique before finishing — a step that catches warped shafts before you invest time in the rest of the build."
+        excerpt: "Port Orford Cedar is one of the most willing to stay straight. The heel of the hand method involves locating bends, placing them against your palm, and stretching fibers while applying controlled force."
+      - id: "fletching-wing"
+        anchor: "#fletching"
+        why: "Canonical statement on wing consistency: all feathers must come from the same wing."
+        excerpt: "All feathers on an arrow must be from the same wing for proper flight. When mounting feathers on shafts, the feather should be placed with the trailing edge between 1/2\" and 5/8\" down from the nock, which allows for finger clearance."
+      - id: "point-mounting"
+        anchor: "#point-mounting"
+        why: "Step-by-step on hot-melt point installation including surface prep."
+        excerpt: "Use hot-melt adhesive applied via alcohol burner. Wipe out the inside of your point with alcohol-soaked cotton to remove manufacturing residue. Heat the point, glue, and shaft simultaneously, then rotate to ensure straight alignment before cooling."
+      - id: "tapering"
+        anchor: "#tapering"
+        why: "Establishes the measurement sequence: measure from nock valley to desired length, add 3/4\"–7/8\" for the taper, then cut."
+        excerpt: "Measure from the nock valley to desired length, then add 3/4\" to 7/8\" for the taper before cutting."
+
+  - title: "3Rivers Archery — Basic Longbow and Recurve Set-Up"
+    url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+    authority: "well-known-retailer-with-educational-content"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "brace-height"
+        anchor: "#brace-height"
+        why: "Practical guidance on measuring and adjusting brace height — the first setup step before tuning."
+        excerpt: "Brace height is the distance between the deepest portion of the bow's grip and the bowstring when the bow is at rest. Many modern longbows prefer around seven inches and recurves, depending on design, between seven and nine inches."
+      - id: "nocking-point"
+        anchor: "#nocking-point"
+        why: "Standard starting nocking point position and adjustment logic (porpoising = nocking point; fishtailing = spine)."
+        excerpt: "Most traditional bows like to have the nocking point approximately 1/2 inch above the shelf. Problems indicate correction needs: porpoising (vertical wagging) — adjust nocking point up or down until arrow flight straightens. Fishtailing (side-to-side motion) — indicates arrow spine mismatch, not a nocking point issue."
+      - id: "spine-adjustment"
+        anchor: "#spine"
+        why: "Practical field-test for spine match using point weight variation before committing to a different shaft spine."
+        excerpt: "Arrow too stiff (impacts left for right-handed archers): Add heavier points. Arrow too weak (impacts right): Try lighter points."
+
+  - title: "Archery360 — How to Bare-Shaft Tune Your Recurve or Longbow"
+    url: "https://archery360.com/2019/07/10/how-to-bare-shaft-tune-your-recurve-or-longbow/"
+    authority: "well-known-third-party"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "bareshaft-what-reveals"
+        anchor: "#what-it-reveals"
+        why: "Defines what bareshaft tuning actually tests — the key distinction between vertical (nocking point) and horizontal (spine) errors."
+        excerpt: "Bare-shaft tuning reveals whether your arrow spine matches your setup and whether your nocking point is correctly positioned. Fletching masks imperfections, while bare shafts expose them. If your bare shaft hits low, your nocking point is too high. If your bare shaft hits high, your nocking point is too low."
+      - id: "bareshaft-horizontal"
+        anchor: "#horizontal-adjustments"
+        why: "Spine match diagnosis from horizontal impact: left = stiff, right = weak (for right-handed archers)."
+        excerpt: "Left impact = spine too stiff. Right impact = spine too weak. (Reverse for left-handed archers.)"
+
+  - title: "Easton Archery — What Is FOC and How Does It Affect Arrow Flight"
+    url: "https://eastonarchery.com/2014/06/foc/"
+    authority: "manufacturer"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "foc-definition"
+        anchor: "#what-is-foc"
+        why: "Canonical manufacturer definition of FOC and how to calculate it."
+        excerpt: "Front-of-center (FOC) describes the percentage of an arrow's total weight positioned in the front half of the shaft. Higher FOC produces stable flight but causes the arrow to lose trajectory quickly and nose-dive. Easton recommends 10–15% FOC for hunting setups to achieve optimal accuracy."
+      - id: "foc-calculation"
+        anchor: "#calculation"
+        why: "Step-by-step calculation method module-builders can reproduce for the learner."
+        excerpt: "Divide total arrow length by 2 to find the midpoint. Locate the physical balance point (where arrow balances perfectly). Subtract the midpoint measurement from the balance point. Multiply by 100. Divide by total arrow length."
+
+  - title: "Easton Archery — Making Sense of Arrow Spine"
+    url: "https://eastonarchery.com/2014/07/making-sense-of-arrow-spine/"
+    authority: "manufacturer"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "static-spine-def"
+        anchor: "#static-spine"
+        why: "Manufacturer-authoritative definition of the static spine measurement standard used on all commercial shaft labeling."
+        excerpt: "An 880-gram (1.94 lbs.) weight is suspended from the center of the arrow supported 28 inches apart. The resulting deflection in inches, multiplied by 1000, determines the spine rating."
+      - id: "dynamic-spine-def"
+        anchor: "#dynamic-spine"
+        why: "Explains why static spine is a starting point but dynamic spine is what actually matters during a shot."
+        excerpt: "Dynamic spine describes how an arrow responds to a bow's stored energy during actual shooting. Because countless variables affect this behavior, manufacturers typically don't use this measurement for commercial spine ratings. Shooters can adjust dynamic spine by modifying draw weight, point weight, string material, vane weight, or arrow length."
+
+  - title: "Stu Miller's Dynamic Spine Calculator"
+    url: "https://heilakka.com/stumiller/"
+    authority: "community-practitioner-tool"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "calculator-purpose"
+        anchor: "#overview"
+        why: "The most widely cited free tool for matching wood arrow spine to a specific traditional bow. Used as the starting point before test-shooting."
+        excerpt: "The calculator was developed to aid the traditional archer in defining the appropriate arrow setup to match a given bow design. The formulas are derived primarily from modern deflex/reflex longbow and recurve designs based on actual shooting experience coupled with basic engineering principles."
+      - id: "calculator-methodology"
+        anchor: "#how-to-use"
+        why: "Explains the personal form factor (PFF) calibration step — essential to get accurate results rather than treating the output as absolute."
+        excerpt: "The absolute best way to start with Stu's is to input known bow/arrow specs that are already tuned and fly well for you, then alter the Personal Form Factor until the numbers are within 2 pounds, and keep the PFF constant throughout your inputs of other arrows and bows."
+
+  - title: "Rose City Archery — Spine Weight Chart (Recurve, Longbow, Compound)"
+    url: "https://www.rosecityarchery.com/pages/spine-weight-recurve-longbow-compound-bow-chart"
+    authority: "manufacturer"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "poc-spine-natural"
+        anchor: "#port-orford-cedar"
+        why: "Explains why Port Orford cedar spine is a natural property of the wood — it cannot be manufactured to spec the way aluminum or carbon can."
+        excerpt: "The spine weight of Port Orford Cedar Arrows is virtually natural and cannot be 'manufactured'. The spine weight is solely determined by the diameter of the shaft and the density of the Port Orford Cedar wood."
+      - id: "spine-per-inch"
+        anchor: "#adjustment"
+        why: "Standard per-inch spine adjustment rule used when cutting shafts to a non-standard draw length."
+        excerpt: "For cutting to your personal draw length you will need to deduct 5 lbs (1 spine weight increment lower) for every inch cut off below 28 inches. For every inch above 28 you will need to add 5 lbs or 1 spine weight increment per inch."
+
+  - title: "Wikipedia — Archer's paradox"
+    url: "https://en.wikipedia.org/wiki/Archer%27s_paradox"
+    authority: "well-known-third-party"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "paradox-definition"
+        anchor: "#description"
+        why: "The clearest freely-available definition of archer's paradox and its relationship to spine matching."
+        excerpt: "The paradox is that an arrow will fly in a straight line to a target when it starts off pointing away from the target. In order to be accurate, an arrow must have the correct stiffness, or 'dynamic spine', to flex out of the way of the bow and to return to the correct path as it leaves the bow."
+      - id: "traditional-vs-modern"
+        anchor: "#traditional-vs-modern"
+        why: "Distinguishes traditional bow behavior (where paradox is real) from cut-away-riser target bows (where it is absent) — directly relevant to why wood arrow spine matching is more demanding."
+        excerpt: "Modern target bows often have risers with an eccentrically cutout arrow window; being centre shot, these bows do not exhibit any paradoxical behaviour as the arrow is always pointing visually along its line of flight."
+
+  - title: "Wikipedia — Fletching"
+    url: "https://en.wikipedia.org/wiki/Fletching"
+    authority: "well-known-third-party"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "fletching-definition"
+        anchor: "#definition"
+        why: "Reference definition of fletching and the three-feather configuration standard for traditional arrows."
+        excerpt: "Fletching refers to the fin-shaped aerodynamic stabilization device attached on arrows, crossbow bolts, darts, and javelins. Conventionally, fletching consists of three matched half-feathers positioned equally around the arrow's circumference."
+      - id: "wing-consistency"
+        anchor: "#feather-orientation"
+        why: "Authoritative statement on why all feathers must come from the same wing."
+        excerpt: "A right handed archer should shoot a right winged feather and right handed helical, and a left handed archer should use the opposite. Modern slow-motion analysis reveals that the arrow does not begin to spin until it is well past the riser, making consistency in fletching more critical than theoretical preferences."
+
+  - title: "3Rivers Archery — How to Arrow Cresting"
+    url: "https://www.3riversarchery.com/blog/how-to-arrow-cresting/"
+    authority: "well-known-retailer-with-educational-content"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "cresting-definition"
+        anchor: "#what-is-cresting"
+        why: "Context for why traditional archers crest arrows — identification historically, personal expression today."
+        excerpt: "Cresting is the practice of decorating arrows with painted designs. Historically used for arrow identification, it has become a way of personal expression among modern archers."
+      - id: "cresting-technique"
+        anchor: "#technique"
+        why: "The key craft warning: thin coats and patience matter more than any particular color scheme."
+        excerpt: "The easiest way to mess up an arrow is to try and hurry through the cresting. Apply wider bands first, then move to thinner bands, with thin separator lines between colors to give the crest a clean finished look."
+
+  - title: "Legend Archery — Footed Arrow"
+    url: "https://legendarchery.com/pages/footed-arrow"
+    authority: "well-known-third-party"
+    last_checked: "2026-05-01"
+    sections:
+      - id: "footing-definition"
+        anchor: "#definition"
+        why: "Clear definition of what a footed arrow is and the trade-offs: durability vs added weight and construction complexity."
+        excerpt: "A footed arrow features a reinforcing piece of hardwood attached to its front end, typically made from materials like hornbeam or bamboo. By reinforcing the area most likely to break, the arrow is more likely to survive impact, while maintaining overall flexibility and lighter weight."
+      - id: "footing-tradeoffs"
+        anchor: "#trade-offs"
+        why: "Honest framing of when footing is and is not worth the extra effort."
+        excerpt: "Footed arrows suit archers prioritizing durability and accuracy over convenience and cost. Added weight affects speed and trajectory. Higher production costs. Requires specialized skill to construct properly."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONCEPT MAP
+# Sequencing dependencies for the designer. Foundation concepts (empty
+# depends_on) appear in early modules; later concepts depend on earlier ones.
+# ─────────────────────────────────────────────────────────────────────────────
+concept_map:
+  - concept: "Wood species selection (Port Orford cedar, Sitka spruce, Douglas fir)"
+    depends_on: []
+    appears_in: ["shaft-selection"]
+  - concept: "Static spine measurement and AMO standard"
+    depends_on: []
+    appears_in: ["shaft-selection"]
+  - concept: "Draw weight and draw length"
+    depends_on: []
+    appears_in: ["shaft-selection"]
+  - concept: "GPI and GPP"
+    depends_on: ["Draw weight and draw length"]
+    appears_in: ["shaft-selection"]
+  - concept: "Dynamic spine and shaft selection"
+    depends_on: ["Static spine measurement and AMO standard", "Draw weight and draw length"]
+    appears_in: ["shaft-selection"]
+  - concept: "Stu Miller's Dynamic Spine Calculator"
+    depends_on: ["Dynamic spine and shaft selection"]
+    appears_in: ["shaft-selection"]
+  - concept: "Shaft straightening"
+    depends_on: ["Wood species selection (Port Orford cedar, Sitka spruce, Douglas fir)"]
+    appears_in: ["shaft-prep"]
+  - concept: "Point taper (5-degree) and nock taper (11-degree)"
+    depends_on: ["Shaft straightening"]
+    appears_in: ["shaft-prep"]
+  - concept: "Sealing and finishing (shellac, polyurethane, gasket lacquer)"
+    depends_on: ["Shaft straightening", "Point taper (5-degree) and nock taper (11-degree)"]
+    appears_in: ["shaft-prep"]
+  - concept: "Cresting and crown decoration"
+    depends_on: ["Sealing and finishing (shellac, polyurethane, gasket lacquer)"]
+    appears_in: ["finishing"]
+  - concept: "Nock insert installation"
+    depends_on: ["Point taper (5-degree) and nock taper (11-degree)"]
+    appears_in: ["assembly"]
+  - concept: "Self nock"
+    depends_on: ["Nock insert installation"]
+    appears_in: ["assembly"]
+  - concept: "Glue-on field point installation"
+    depends_on: ["Point taper (5-degree) and nock taper (11-degree)"]
+    appears_in: ["assembly"]
+  - concept: "Feather fletching (left-wing vs right-wing)"
+    depends_on: []
+    appears_in: ["fletching"]
+  - concept: "Shield cut vs parabolic cut"
+    depends_on: ["Feather fletching (left-wing vs right-wing)"]
+    appears_in: ["fletching"]
+  - concept: "Helical vs offset vs straight fletching"
+    depends_on: ["Feather fletching (left-wing vs right-wing)"]
+    appears_in: ["fletching"]
+  - concept: "Fletching jig use and feather clamp"
+    depends_on: ["Shield cut vs parabolic cut", "Helical vs offset vs straight fletching"]
+    appears_in: ["fletching"]
+  - concept: "FOC (front-of-center) calculation and targeting"
+    depends_on: ["Glue-on field point installation", "Feather fletching (left-wing vs right-wing)"]
+    appears_in: ["tuning-fundamentals"]
+  - concept: "Archer's paradox"
+    depends_on: ["Dynamic spine and shaft selection"]
+    appears_in: ["tuning-fundamentals"]
+  - concept: "Brace height and bow window"
+    depends_on: ["Archer's paradox"]
+    appears_in: ["tuning-fundamentals"]
+  - concept: "Nocking point setting"
+    depends_on: ["Brace height and bow window"]
+    appears_in: ["tuning-fundamentals"]
+  - concept: "Centershot alignment"
+    depends_on: ["Brace height and bow window"]
+    appears_in: ["tuning-fundamentals"]
+  - concept: "Bareshaft tuning"
+    depends_on: ["Nocking point setting", "Centershot alignment", "Archer's paradox"]
+    appears_in: ["tuning-methods"]
+  - concept: "Paper tuning"
+    depends_on: ["Bareshaft tuning"]
+    appears_in: ["tuning-methods"]
+  - concept: "Walk-back tuning"
+    depends_on: ["Bareshaft tuning", "Centershot alignment"]
+    appears_in: ["tuning-methods"]
+  - concept: "Footing (hardwood splice)"
+    depends_on: ["Sealing and finishing (shellac, polyurethane, gasket lacquer)"]
+    appears_in: ["advanced-construction"]
+  - concept: "Shaft repair (crack, split, tip)"
+    depends_on: ["Glue-on field point installation", "Nock insert installation"]
+    appears_in: ["maintenance-repair"]
+  - concept: "Feather re-fletching and adhesive repair"
+    depends_on: ["Fletching jig use and feather clamp"]
+    appears_in: ["maintenance-repair"]
+  - concept: "Serving (bowstring protection and nock point)"
+    depends_on: ["Nocking point setting"]
+    appears_in: ["maintenance-repair"]
+
+# ─────────────────────────────────────────────────────────────────────────────
+# CONTRASTS
+# Every contrast includes a real situation where the alternative wins.
+# ─────────────────────────────────────────────────────────────────────────────
+contrasts:
+  - this: "Wood arrows (Port Orford cedar)"
+    alternative: "Carbon or aluminum arrows"
+    when_alt_wins: "High-volume competitive shooting where durability, weight tolerance, and consistent spine from shaft to shaft are paramount. Carbon arrows do not warp, absorb no moisture, and hold spine indefinitely. Aluminum arrows are inexpensive and consistent enough for beginners."
+    when_this_wins: "Traditional aesthetic, off-the-shelf feel, repairability (a dinged point or split nock can be repaired at home with basic tools), and the tactile pleasure of a natural material that rewards careful building. Wood arrows are the correct choice for this curriculum's goal."
+
+  - this: "Tapered shaft (nock and point ends tapered)"
+    alternative: "Parallel shaft (uniform diameter)"
+    when_alt_wins: "Parallel shafts are cheaper to source in bulk, and some builders prefer to custom-cut the taper angle themselves for tight control. Parallel shafts also allow re-tapering if the nock end splits — you remove a short section and re-taper."
+    when_this_wins: "Pre-tapered shafts from Rose City or 3Rivers arrive ready to fletch and mount points without a separate tapering step, saving setup time in a small batch build like this curriculum's 24-arrow project."
+
+  - this: "Nock insert (glue-on plastic nock)"
+    alternative: "Self nock (cut into the wood)"
+    when_alt_wins: "Self nocks are historically accurate, aesthetically aligned with primitive and period-correct builds, and require no additional hardware. For a re-enactment or primitive archery context, the self nock is the correct choice."
+    when_this_wins: "Plastic nock inserts are more durable, consistent, and safe — a cracked self nock can shatter on release and drive a sliver into the draw hand. For target shooting 24 arrows repeatedly, glue-on nocks are the reliable practitioner choice."
+
+  - this: "Right-wing feathers (for right-handed archer)"
+    alternative: "Left-wing feathers"
+    when_alt_wins: "If the fletching jig clamp is left-helical only, left-wing feathers are the correct match. Wing choice must match the clamp geometry — using the wrong wing with a helical clamp causes the feather to fight the twist and produces inconsistent adhesion."
+    when_this_wins: "With a right-helical clamp (the most common configuration for right-handed archers), right-wing feathers seat naturally along the clamp's curvature, producing consistent helical contact and a secure bond."
+
+  - this: "Parabolic cut feathers"
+    alternative: "Shield cut feathers"
+    when_alt_wins: "Shield-cut feathers provide more drag and faster arrow stabilization — useful when arrows are slightly under-spined or when shooting off a wide shelf where the cock feather must clear quickly. The extra surface area also corrects marginal form errors more aggressively."
+    when_this_wins: "Parabolic-cut feathers produce slightly less drag and noise, fly a bit faster, and are the standard for well-tuned target arrows. When spine is correctly matched and form is consistent, the parabolic's lower profile is an advantage at longer target distances."
+
+  - this: "Bareshaft tuning"
+    alternative: "Paper tuning"
+    when_alt_wins: "Paper tuning gives an immediate visual read on arrow orientation at the moment of bow clearance — useful for diagnosing form-related issues (finger pinch, torque) that bareshaft groups average out. It is also faster for a single-arrow diagnostic session."
+    when_this_wins: "Bareshaft tuning on a traditional bow is more reliable than paper tuning because it averages out across a group of shots, reducing the influence of any single bad release. It also works at realistic distances (10–20 yards) rather than the 6-foot paper distance, which exaggerates minor form errors."
+
+  - this: "Port Orford cedar"
+    alternative: "Douglas fir (Surewood Shafts)"
+    when_alt_wins: "Douglas fir produces heavier arrows for a given spine — 12–15+ GPI vs. 10–13 GPI for cedar — which can be desirable for archers wanting more downrange momentum or who shoot heavier bows where the extra mass dampens paradox oscillation. Surewood's Douglas fir is also highly consistent in spine grouping."
+    when_this_wins: "Port Orford cedar is lighter, more widely available in a broader diameter range, easier to straighten with hand tools, and has the best modulus of elasticity of any commercial shaft wood — it recovers from paradox flex faster, which matters at longer target distances. It is the canonical choice for this curriculum."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# AUTHORITIES
+# Sources the field treats as credible. Reviewer uses this list to flag
+# low-credibility citations in module reading lists.
+# ─────────────────────────────────────────────────────────────────────────────
+authorities:
+  - name: "3Rivers Archery"
+    url: "https://www.3riversarchery.com/"
+    why: "The largest traditional archery specialty retailer in North America; their blog and PDFs are the most widely cited practical reference for wood arrow building outside of books. Their spine chart (woodchart.pdf) is a community standard."
+
+  - name: "Rose City Archery"
+    url: "https://www.rosecityarchery.com/"
+    why: "The oldest continuously operating cedar arrow manufacturer in North America; their spine weight chart and FAQ pages are primary references for Port Orford cedar shaft selection."
+
+  - name: "Surewood Shafts"
+    url: "https://surewoodshafts.com/"
+    why: "Premium Douglas fir shaft producer that sources and processes its own raw material; their spine selection guidance and build recommendations are a credible alternative to cedar-centric sources."
+
+  - name: "Easton Archery"
+    url: "https://eastonarchery.com/"
+    why: "Although primarily a carbon/aluminum manufacturer, Easton's spine standard, FOC documentation, and arrow-selection methodology are the most widely adopted industry references and apply directly to wood arrow work."
+
+  - name: "Stu Miller's Dynamic Spine Calculator"
+    url: "https://heilakka.com/stumiller/"
+    why: "The most cited free tool for matching wood arrow spine to a specific traditional bow setup. Developed from engineering principles and live-shooting data; used by a large fraction of the traditional archery community as the starting point before test shooting."
+
+  - name: "The Traditional Bowyer's Bible (Volumes I–IV), edited by Jim Hamm"
+    url: "https://www.3riversarchery.com/traditional-bowyers-bible-complete-set-of-books.html"
+    why: "The canonical practitioner reference for the traditional archery craft. Volume 1 covers arrow making and fletching in depth; Volume 3 includes arrow construction from a historical perspective. Widely regarded as the most authoritative technical text in the field."
+
+  - name: "Clay Hayes — Traditional Archery (YouTube)"
+    url: "https://www.youtube.com/@ClayHayes"
+    why: "A well-respected traditional archer and bowyer with freely accessible video documentation of arrow building, tuning, and traditional archery techniques. Recommended for visual learners as a companion to written sources."
+
+# ─────────────────────────────────────────────────────────────────────────────
+# OPEN QUESTIONS
+# Items the researcher could not resolve; the orchestrator surfaces these
+# to the user before dispatching the designer.
+# ─────────────────────────────────────────────────────────────────────────────
+open_questions:
+  - "The learner's bow draw weight and draw length are not specified. The designer and module-builders will need these to give concrete spine selection examples. The interview says 'bow with known draw weight on hand' — confirm the actual draw weight (e.g., 45#, 55#, 65# at 28\") and draw length before the designer sets the worked example."
+  - "The learner's dominant hand (right- or left-handed) is not stated. Wing choice (right-wing vs left-wing feathers) and fletching jig clamp configuration depend on this. Module builders will default to right-handed unless the user specifies otherwise."
+  - "The fletching jig model is not named. Clamp type (straight, offset, helical) and the degree of helical twist available affect which feather profile and wing are correct for this specific jig. If the learner knows the jig make/model, that determines a concrete fletching recommendation rather than a conditional one."
+  - "Point weight is unspecified. For a target setup at typical indoor/outdoor ranges, 100–125 grain field points are common for cedar, but the correct weight depends on draw weight and desired FOC. The curriculum will use 100-grain as the worked example unless the user specifies otherwise."
+  - "Shaft diameter preference (5/16\" vs 11/32\" vs 23/64\") is not stated. For most traditional target archers at 40–65#, 11/32\" is the default; 5/16\" is appropriate for lighter bows. This should be confirmed before the shaft-selection module is written to prevent a confusing conditional structure."
+  - "The learner mentioned 'AI-generated reference imagery as a fallback' — this is acceptable per the interview, but the designer should note that AI imagery must be labeled as AI-generated in the curriculum. Free-use traditional archery imagery on Wikimedia Commons is available (search: fletching, arrow, traditional archery) and should be checked first."

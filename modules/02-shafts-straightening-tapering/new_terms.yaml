@@ -1,0 +1,23 @@
+- term: "Grain scale"
+  definition: "A precision weighing instrument calibrated in grains (the unit of mass used for arrows and projectiles, where 1 grain = 1/7000 of a pound). A reloading scale with 0.1-grain resolution is the standard tool for measuring raw shaft weight when calculating GPI. Digital scales marketed for jewelry or gold may have sufficient resolution; kitchen scales typically do not."
+  references:
+    - label: "Archery360 — How to Calculate Arrow Weight and Why"
+      url: "https://archery360.com/2018/06/14/how-to-calculate-arrow-weight-and-why/"
+    - label: "BobLeeBows — Arrow GPI vs GPP"
+      url: "https://bobleebows.com/arrows-critical-difference-gpi-gpp/"
+
+- term: "Modulus of elasticity"
+  definition: "A material property describing how much a material deforms under stress relative to its stiffness — specifically, the ratio of stress to strain within the elastic (recoverable) range. In arrow shaft materials, a high modulus of elasticity means the shaft snaps back to straight quickly after the flex of the shot, improving flight consistency. Port Orford cedar has a high modulus relative to its density, which is the primary reason it is preferred for traditional arrow shafts over heavier woods."
+  references:
+    - label: "Wikipedia — Elastic modulus"
+      url: "https://en.wikipedia.org/wiki/Elastic_modulus"
+    - label: "3Rivers Archery — Port Orford Cedar Wood Arrow Shafts"
+      url: "https://www.3riversarchery.com/port-orford-cedar-wood-arrow-shafts.html"
+
+- term: "Reject rate"
+  definition: "The percentage of raw shafts from a bundle that are culled before reaching the finished-arrow stage, due to weight outliers (GPI outside tolerance), geometry defects (bends that cannot be corrected), or taper failures. For raw cedar shaft bundles, a 5–15% reject rate is considered normal. Arrow makers order extras (typically 15–20% more than needed) to absorb expected rejects without falling short of the target batch size."
+  references:
+    - label: "3Rivers Archery — Port Orford Cedar Wood Arrow Shafts"
+      url: "https://www.3riversarchery.com/port-orford-cedar-wood-arrow-shafts.html"
+    - label: "Wapiti Archery POC — Premium Weight Matched Port Orford Cedar Shafts"
+      url: "https://wapitiarcherypoc.com/product/premium-weight-matched-port-orford-cedar-shafts/"

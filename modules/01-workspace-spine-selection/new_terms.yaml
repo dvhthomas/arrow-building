@@ -1,0 +1,13 @@
+- term: "Personal Form Factor (PFF)"
+  definition: "A calibration constant in Stu Miller's Dynamic Spine Calculator that adjusts the output for the archer's individual release style. A clean, consistent finger release approximates PFF 1.0 (the default); a harder 'pluck' release effectively adds draw weight to the arrow and requires a lower PFF. Calibrate PFF by entering the specs of an arrow setup that already flies well for you and adjusting PFF until the calculator's output matches the known-good spine."
+  references:
+    - label: "Stu Miller's Dynamic Spine Calculator — How to Use"
+      url: "https://heilakka.com/stumiller/"
+
+- term: "Spine-sorted batch"
+  definition: "A quantity of wood arrow shafts that have been individually measured for static spine and grouped into 5-pound AMO increments (e.g., 50–55#, 55–60#) before sale. Buying spine-sorted shafts eliminates the manual sorting step and reduces cull rate in a matched-set build. Rose City Archery and 3Rivers Archery both offer Port Orford cedar in pre-sorted batches."
+  references:
+    - label: "Rose City Archery — Port Orford Cedar Shafts"
+      url: "https://www.rosecityarchery.com/pages/spine-weight-recurve-longbow-compound-bow-chart"
+    - label: "3Rivers Archery — Port Orford Cedar Wood Arrow Shafts"
+      url: "https://www.3riversarchery.com/port-orford-cedar-wood-arrow-shafts.html"

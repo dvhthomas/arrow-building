@@ -1,0 +1,16 @@
+baseURL: /
+defaultContentLanguage: en
+title: "Traditional Wood Arrows"
+
+pagination:
+  pagerSize: 20
+
+params:
+  description: "Build, tune, and maintain a matched set of traditional wood target arrows for a 40 lb bow."
+  author: "Dylan Thomas"
+  hue: 90
+  font_preset: "book"
+
+taxonomies:
+  tag: tags
+  topic: topics

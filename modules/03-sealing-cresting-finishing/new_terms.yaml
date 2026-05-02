@@ -1,0 +1,37 @@
+- term: "Gasket lacquer"
+  definition: "A fast-drying nitrocellulose or alkyd lacquer originally formulated for sealing automotive gasket surfaces. In arrow-making it is the traditional dip-tube finish of choice: it flows smoothly off a dipped shaft, levels to a high-gloss surface, and cures harder than shellac, giving target arrows a durable, scratch-resistant coat. Dry to touch in 30–60 minutes; re-coat in 2–4 hours; full cure in 24 hours. Common brands used for arrows include Deft Clear Wood Finish and Bull's-Eye."
+  references:
+    - label: "ArcheryTalk — Which Wooden Arrow Sealer and Why (practitioner thread)"
+      url: "https://www.archerytalk.com/threads/which-wooden-arrow-sealer-why.2241698/"
+    - label: "TradBow.com — Question About Wood Arrow Finishes"
+      url: "https://tradbow.com/forums/topic/question-about-wood-arrow-finishes/"
+
+- term: "Shellac"
+  definition: "A natural resin secreted by the lac bug (Kerria lacca), dissolved in denatured alcohol to produce a wood finish. In arrow-making, dewaxed shellac (e.g., Zinsser SealCoat at approximately 2-lb cut) is used as a dip-tube sealer. Advantages: fast dry (touch-dry in 30–45 minutes), re-coatable in 2 hours, compatible with virtually all fletching adhesives and hot-melt point compounds. Liability: susceptible to moisture blushing if applied in high humidity."
+  references:
+    - label: "Zinsser Bulls Eye SealCoat — Product Information"
+      url: "https://www.rustoleum.com/product-catalog/consumer-brands/zinsser/shellacs/bulls-eye-sealcoat-universal-sanding-sealer"
+    - label: "ArcheryTalk — Which Wooden Arrow Sealer and Why"
+      url: "https://www.archerytalk.com/threads/which-wooden-arrow-sealer-why.2241698/"
+
+- term: "Blushing"
+  definition: "A defect in shellac and lacquer finishes in which moisture is trapped in the film during drying, producing a white or milky haze. Caused by applying finish in high ambient humidity or in a cold, drafty workspace where the solvent evaporates unevenly. For shellac, early blushing can be corrected by misting the surface with denatured alcohol to re-dissolve and re-level the film; a fully hardened blush must be sanded back and re-coated."
+  references:
+    - label: "Woodworking Network — Understanding and Preventing Blushing in Lacquer"
+      url: "https://www.woodworkingnetwork.com/finishing/understanding-preventing-blushing-lacquer"
+
+- term: "Cresting jig"
+  definition: "A tool that holds an arrow shaft and rotates it slowly and consistently around its long axis while the archer paints crest bands with a brush held steady. May be powered (a slow-speed motor or drill press) or manual (a V-block that lets the builder rotate the shaft by hand). A cresting jig is not strictly required — a steady hand and a slowly rotated shaft produce acceptable results — but it is the standard tool for tight, consistent crest bands."
+  references:
+    - label: "3Rivers Archery — How to Arrow Cresting"
+      url: "https://www.3riversarchery.com/blog/how-to-arrow-cresting/"
+    - label: "Bohning — Arrow Crester"
+      url: "https://www.bohning.com/cresting.html"
+
+- term: "2-lb cut (shellac)"
+  definition: "A shellac concentration specification: 2 pounds of shellac flakes dissolved in 1 gallon of denatured alcohol (or proportionally, 2 oz per pint). The 2-lb cut is the standard dip-tube consistency for arrow finishing — thin enough to flow smoothly off a dipped shaft, thick enough to leave a visible film. Thicker cuts (3-lb, 4-lb) are used for brushing; thinner cuts (1-lb) are used as sanding sealers."
+  references:
+    - label: "Bob Flexner — Understanding Wood Finishing (Taunton Press)"
+      url: "https://www.tauntonstore.com/understanding-wood-finishing-3rd-edition-070929"
+    - label: "Woodcraft — Working with Shellac"
+      url: "https://www.woodcraft.com/blog/working-with-shellac"

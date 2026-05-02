@@ -1,0 +1,48 @@
+weight: 3
+title: "Sealing, Cresting, and Finishing: Making the Set Last and Look Like a Set"
+short_title: "Sealing and Cresting"
+driving_question: "How do I protect 24 cedar shafts from moisture and give them a finish that makes them look like a matched set?"
+concepts:
+  - "Sealing and finishing (shellac, polyurethane, gasket lacquer)"
+  - "Cresting and crown decoration"
+  - "Dip tube"
+  - "GPP (grains per pound)"
+contrast:
+  alternative: "Parallel shaft (uniform diameter, no taper steps until after finishing)"
+  when_alternative_wins: "Parallel shafts allow re-tapering if the nock end splits — remove a short section and re-taper the fresh end. They are also cheaper to source in bulk, and some builders prefer to custom-cut taper angles themselves for tight control over the seating fit."
+reading:
+  primary:
+    url: "https://www.archerytalk.com/threads/which-wooden-arrow-sealer-why.2241698/"
+    section: "Read the full thread for practitioner consensus on shellac vs. gasket lacquer vs. polyurethane — pay attention to the comments distinguishing between dip and wipe-on application."
+  secondary:
+    url: "https://www.3riversarchery.com/blog/how-to-arrow-cresting/"
+    section: "Technique section — the key craft warning about thin coats and sequencing wide bands before thin ones applies directly to the matched set."
+exercise_goal: |
+  The learner runs the full sealing and finishing sequence on all 24 shafts using the dip tube, then applies optional cresting to identify the matched set.
+
+  Dip tube setup and first coat:
+    - [TODO: Embed a labeled diagram or photograph showing a properly loaded dip tube — the tube must be long enough to fully submerge a shaft, sealed at the bottom, with the finish poured in to a depth that covers the full shaft length; label the tube, the hanging wire, and the drip catch; Wikimedia Commons is thin on dip tube imagery — a manufacturer educational page (3Rivers Archery, Bohning) or a clearly labeled AI-generated diagram (must be labeled as AI-generated) is acceptable here]
+    - The module-builder must walk through sealer choice for this specific build: shellac is fast-drying and compatible with most fletching adhesives; gasket lacquer is the classic dip-tube choice for high gloss; polyurethane is the most durable but slowest. For the 24-arrow batch with a dip tube already on hand, gasket lacquer or shellac in the dip tube is the recommended path — the module-builder must explain why and cite the ArcheryTalk thread.
+    - [TODO: Provide a step-by-step dip sequence checklist — dip, hang to dry, light sand (state the grit), wipe, dip again — with recommended minimum number of coats for a target arrow used on soft foam/burlap targets; the learner fills in the coat count from the reading before proceeding]
+
+  Weight tracking after sealing:
+    - After two coats of sealer, the learner reweighs each shaft and recalculates GPI. Finish adds weight; for a batch-matched set, a uniform dip process keeps the added weight consistent across all 24 shafts. The module-builder must show the learner how finish weight affects GPP at the finished-arrow stage — for a 40 lb bow, the target is 6.5–8 GPP on the finished arrow. Show the arithmetic: (shaft weight + point weight + nock weight + fletch weight) ÷ 40 lb draw weight.
+
+  Cresting:
+    - Cresting is optional but recommended for the matched set: a crest pattern unique to this batch makes it easy to identify arrows at a communal target and adds craft value.
+    - [TODO: Embed a photograph or illustration of a crested traditional wood arrow showing the crest band layout — wide base color, narrower accent bands, thin separator lines; search Wikimedia Commons "crested arrow" or "traditional arrow cresting"; 3Rivers Archery's cresting blog post includes photographs that may be usable with attribution]
+    - The exercise does not prescribe a color scheme — the learner chooses. The module-builder must reproduce the 3Rivers cresting warning verbatim: "Apply wider bands first, then move to thinner bands, with thin separator lines between colors to give the crest a clean finished look."
+    - [TODO: Include a drying / curing timeline table the learner fills in based on their chosen sealer — shellac: dry to touch in X minutes, re-coat in Y hours; gasket lacquer: Z; polyurethane: W. The module-builder populates with sourced values; the learner confirms against their own conditions]
+
+  The exercise ends with 24 sealed and optionally crested shafts, dry, ready for fletching and hardware attachment.
+validation_scenario: |
+  You've finished the first dip coat on all 24 shafts and hung them to dry. The next morning you notice that three shafts have a slightly rough, grainy texture along one side — like the finish blushed or bubbled. The other 21 look fine.
+
+  Good answer covers:
+    - Blushing in shellac is caused by moisture trapped during drying — high ambient humidity or a cold drafty workspace. Bubbling in gasket lacquer usually means the shaft was not clean (oil, dust, or residue from a previous coat not fully sanded) or the finish was applied too thickly in one pass.
+    - Diagnosis: check the workspace humidity and temperature relative to the manufacturer's recommended application range. Feel the three affected shafts — if the finish is still tacky, they were hung in a cold or humid area that slowed drying.
+    - Recovery: for shellac blushing, a light mist of denatured alcohol can dissolve and re-level the blush if caught early. For a hardened rough coat, sand back with the same grit used between coats and re-dip.
+    - The learner should confirm the other 21 shafts are fully cured before re-dipping the three — mixing cure stages in the same dip tube session risks contaminating the finish with partially set material dragged off the bad shafts.
+    - Honest boundary: if blushing recurs after the fix, the environment is the problem — move the drying rack to a warmer, lower-humidity location rather than chasing a formulation change.
+prior_ends_with: "The learner has 24 (or close to 24) Port Orford cedar shafts that are straight, spine-matched, GPI-matched, and tapered at both ends. They are ready to apply finish and optional cresting."
+next_expects: "The learner has 24 sealed, finished, and optionally crested shafts with consistent finish weight. They are ready to attach feathers, nocks, and points."

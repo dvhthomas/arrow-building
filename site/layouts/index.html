@@ -1,0 +1,22 @@
+{{ define "main" }}
+<div class="home">
+  <h1>{{ .Site.Title }}</h1>
+  <p class="tagline">{{ .Site.Params.description }}</p>
+  {{ .Content }}
+  <h2>Modules</h2>
+  {{ $modulesSection := .Site.GetPage "/modules" }}
+  {{ if $modulesSection }}
+  <ol class="module-list">
+    {{ range $modulesSection.Sections.ByWeight }}
+    <li class="module-item">
+      <a class="module-item-link" href="{{ .RelPermalink }}">
+        <span class="module-item-header">{{ .Title }}</span>
+        {{ with .Params.summary }}<span class="module-item-summary">{{ . }}</span>{{ end }}
+        {{ with .Params.driving_question }}<span class="driving-question-inline">{{ . }}</span>{{ end }}
+      </a>
+    </li>
+    {{ end }}
+  </ol>
+  {{ end }}
+</div>
+{{ end }}

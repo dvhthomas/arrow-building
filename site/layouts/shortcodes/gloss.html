@@ -1,0 +1,4 @@
+{{- $term := .Get 0 -}}
+{{- $display := .Get 1 | default $term -}}
+{{- $anchor := $term | urlize -}}
+<a class="gloss" href="{{ "/glossary/" | relURL }}#{{ $anchor }}">{{ $display }}</a>

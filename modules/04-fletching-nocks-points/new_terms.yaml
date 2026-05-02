@@ -1,0 +1,45 @@
+- term: "Fletch-Tite Platinum"
+  definition: "A water-based fletching adhesive made by Bohning, formulated for natural feathers on wood shafts. Remains slightly flexible when cured, which prevents the brittle trailing-edge failures common with cyanoacrylate adhesives. Open time approximately 30–45 seconds; minimum clamp hold time 5–7 minutes; full cure 24 hours. The standard adhesive recommendation for natural turkey feathers on sealed cedar shafts."
+  references:
+    - label: "Bohning — Fletch-Tite Platinum product page"
+      url: "https://www.bohning.com/fletch-tite-platinum.html"
+    - label: "3Rivers Archery — Fletch-Tite Platinum"
+      url: "https://www.3riversarchery.com/bohning-fletch-tite-platinum.html"
+
+- term: "Cock feather"
+  definition: "The single feather in a three-fletch configuration that is oriented perpendicular to the nock slot. At full draw, the cock feather faces away from the bow shelf (away from the riser side the arrow rests on). This orientation ensures the cock feather clears the shelf cleanly as the arrow exits. The cock feather is often a different color from the two hen feathers to allow quick, consistent nocking."
+  references:
+    - label: "3Rivers Archery — Building Wood Arrows (fletching section)"
+      url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+    - label: "Wikipedia — Fletching"
+      url: "https://en.wikipedia.org/wiki/Fletching"
+
+- term: "Hen feather"
+  definition: "Either of the two feathers in a three-fletch configuration that are not the cock feather. Hen feathers are positioned 120 degrees from the cock feather and 120 degrees from each other. They are typically the same color as each other and a different color from the cock feather."
+  references:
+    - label: "Wikipedia — Fletching"
+      url: "https://en.wikipedia.org/wiki/Fletching"
+    - label: "ArcheryTalk — Fletching basics"
+      url: "https://www.archerytalk.com/threads/fletching-basics.3000/"
+
+- term: "Hot-melt adhesive"
+  definition: "A thermoplastic adhesive (commonly ethylene vinyl acetate, EVA) that bonds on cooling and releases when reheated. Used for glue-on field point installation on wood arrow shafts: applied via alcohol burner heating, it allows field removal and resetting of points without damaging the shaft taper. Not appropriate for nock installation, where repeated string impact stress requires a flexible, non-thermoplastic bond."
+  references:
+    - label: "3Rivers Archery — Building Wood Arrows (point mounting section)"
+      url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+    - label: "Stickbow.com — Point and Nock Tapers"
+      url: "http://www.stickbow.com/stickbow/arrowbuilding/tapertools.html"
+
+- term: "Tip-roll check"
+  definition: "A quality-verification technique for glue-on field points: the finished arrow is rolled slowly on a flat surface while observing the tip. A correctly seated point rolls smoothly; an off-axis point hops, wobbles, or thumps once per revolution because the point bore is not concentric with the shaft axis. A wobbling tip indicates the point must be reheated and reseated before the arrow is shot."
+  references:
+    - label: "3Rivers Archery — Building Wood Arrows (point mounting section)"
+      url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+
+- term: "Nock cement"
+  definition: "A flexible adhesive specifically formulated for securing glue-on plastic nocks to tapered wood shafts. Remains flexible after cure to absorb the repeated impact of the bowstring on the nock seat without cracking. Functionally interchangeable with fletching adhesive (e.g., Fletch-Tite) for nock installation; distinct from hot-melt, which should not be used for nocks."
+  references:
+    - label: "Bohning — The Nock Guide (PDF)"
+      url: "https://www.bohning.com/wp-content/uploads/2019/09/Nock_Guide.pdf"
+    - label: "3Rivers Archery — Building Wood Arrows"
+      url: "https://www.3riversarchery.com/blog/building-wood-arrows/"

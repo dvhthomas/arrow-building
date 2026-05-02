@@ -1,0 +1,20 @@
+{{ $modulesSection := .Site.GetPage "/modules" }}
+{{ if $modulesSection }}
+<aside class="sidebar">
+  <h3><a href="{{ $modulesSection.RelPermalink }}">All modules</a></h3>
+  <ol class="sidebar-modules">
+    {{ range $modulesSection.Sections.ByWeight }}
+      {{ $isCurrent := or (eq .RelPermalink $.RelPermalink) (in $.RelPermalink .RelPermalink) }}
+      <li class="{{ if $isCurrent }}current{{ end }}">
+        <a href="{{ .RelPermalink }}" title="{{ .Title }}">{{ .Params.short_title | default .Title }}</a>
+        {{ if $isCurrent }}
+          <ul class="sidebar-children">
+            {{ with .GetPage "validation" }}<li><a href="{{ .RelPermalink }}">Validation</a></li>{{ end }}
+            {{ with .GetPage "exercises" }}{{ $exCount := len (where .Pages "Params.type" "exercise") }}<li><a href="{{ .RelPermalink }}">Exercises ({{ $exCount }})</a></li>{{ end }}
+          </ul>
+        {{ end }}
+      </li>
+    {{ end }}
+  </ol>
+</aside>
+{{ end }}

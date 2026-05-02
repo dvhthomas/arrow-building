@@ -1,0 +1,51 @@
+weight: 2
+title: "Shafts: Selecting, Straightening, and Tapering a Matched Batch"
+short_title: "Shafts and Tapering"
+driving_question: "How do I turn a bundle of raw Port Orford cedar shafts into a matched, ready-to-finish set of 24?"
+concepts:
+  - "Wood species selection (Port Orford cedar, Sitka spruce, Douglas fir)"
+  - "GPI (grains per inch)"
+  - "Shaft straightening"
+  - "Point taper (5-degree) and nock taper (11-degree)"
+  - "Footing (hardwood splice)"
+contrast:
+  alternative: "Douglas fir (Surewood Shafts)"
+  when_alternative_wins: "Douglas fir produces heavier arrows for a given spine — 12–15+ GPI vs. 10–13 GPI for cedar — which suits archers wanting more downrange momentum or who shoot heavier bows where the extra mass dampens paradox oscillation. Surewood's Douglas fir is also highly consistent in spine grouping."
+reading:
+  primary:
+    url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+    section: "Straightening and Tapering sections — read both; the straightening technique must be done before tapering, not after."
+  secondary:
+    url: "https://www.rosecityarchery.com/pages/spine-weight-recurve-longbow-compound-bow-chart"
+    section: "Port Orford Cedar section — explains why cedar spine is a natural property of the wood and cannot be manufactured to spec the way aluminum or carbon can."
+exercise_goal: |
+  The learner works through the full batch-prep sequence for the matched set: 24 Port Orford cedar shafts, 11/32", targeting the spine spec established in module 1.
+
+  Batch selection and weight matching:
+    - [TODO: Embed a labeled photograph or diagram showing how to use a grain scale and a spine tester (or the heel-of-hand method) to evaluate a shaft bundle — Wikimedia Commons and 3Rivers Archery's educational pages are the first search targets; label every tool shown]
+    - Sort the 24 shafts by GPI. Port Orford cedar at 11/32" typically runs 10–15 GPI. The module-builder must show the learner how to calculate GPI (shaft weight in grains ÷ shaft length in inches) and what grouping tolerance is appropriate for a matched target set (suggest ±1 GPI as a practical threshold; module-builder should cite or reason from sources).
+    - [TODO: Provide a blank batch-tracking table — columns: shaft number, weight (grains), length (inches), GPI, straightness pass/fail, nock taper cut (date), point taper cut (date) — so the learner can track all 24 shafts through the process]
+
+  Straightening:
+    - The module-builder must demonstrate the heel-of-hand method for locating and correcting bends in Port Orford cedar, citing the 3Rivers Archery excerpt: "locate bends, place them against your palm, and stretch fibers while applying controlled force."
+    - Any shaft that cannot be straightened with hand pressure and springs back after three attempts should be set aside — do not invest taper cuts or finish in a warped shaft.
+
+  Tapering both ends:
+    - Point end: 5-degree taper, cut to accept a glue-on field point. Measure from nock valley to desired finished length, add 3/4"–7/8" for the taper before cutting (per 3Rivers tapering section).
+    - Nock end: 11-degree taper to accept the glue-on plastic nock.
+    - [TODO: Embed a labeled close-up photograph or diagram of both taper profiles side by side — show the 5-degree point taper and 11-degree nock taper with a ruler or angle gauge for scale; Wikimedia Commons "arrow taper" or Stickbow.com's taper tool pages are the primary image sources]
+
+  Footing (contrast only — not part of the canonical 24-arrow build path):
+    - The module-builder must explain what footing is and show one image of a footed arrow, but the exercise does not ask the learner to foot any of the 24 shafts. Footing is the right call when the archer shoots at hard targets or wants maximum durability at the point end; for soft foam / burlap target shooting with 100 gr field points, the footing complexity is not warranted here.
+
+  The exercise ends with all 24 shafts straightened, both ends tapered, batch-tracking table filled in, and reject shafts identified and set aside (typical reject rate for a raw bundle is 5–15%).
+validation_scenario: |
+  You've tapered and straightened 22 of your 24 shafts. Two shafts keep springing back to a slight curve no matter how many times you apply the heel-of-hand correction — the bend is near the middle of each shaft and they've been sitting in a slightly humid garage.
+
+  Good answer covers:
+    - Moisture is the most likely cause of persistent bow in cedar: the shaft has taken a set due to uneven moisture absorption across the grain. The learner should describe checking with a damp cloth and a scale — if the shaft weighs significantly more than comparable dry shafts, it has absorbed moisture.
+    - Mitigation options: let the shafts rest in a dry environment for 24–48 hours and re-test; apply heat from a heat gun briefly and correct while warm. Neither fix is guaranteed on a badly set shaft.
+    - Honest call: if neither fix works after two attempts, cull the shafts. Using a warped shaft wastes all the downstream labor (tapering, sealing, fletching, points) and produces an arrow that will never tune correctly. Two replacements from the original bundle (order a few extras for this reason) is the correct move.
+    - Bonus: the learner connects this to spine drift — moisture absorption also changes a cedar shaft's static spine, which means a waterlogged shaft that somehow straightens may still be out of the batch's spine tolerance.
+prior_ends_with: "The learner has a written spine specification for 11/32 inch Port Orford cedar at 40 lb / 28 inch AMO, understands why archer's paradox makes spine match critical for traditional bows, and has confirmed the workspace is functional. They are ready to evaluate and prepare a batch of raw shafts."
+next_expects: "The learner has 24 (or close to 24) Port Orford cedar shafts that are straight, spine-matched, GPI-matched, and tapered at both ends. They are ready to apply finish and optional cresting."

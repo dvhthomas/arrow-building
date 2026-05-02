@@ -1,0 +1,47 @@
+- term: "Nock cement"
+  definition: "An adhesive specifically formulated for bonding plastic nock inserts to the 11-degree nock taper of a wood arrow shaft. Designed to hold firmly under string-impact vibration while remaining removable with moderate heat. Bohning Fletch-Tite is the most widely cited example in the traditional archery community."
+  references:
+    - label: "Bohning Archery — Fletch-Tite Nock Cement"
+      url: "https://www.bohning.com/product/fletch-tite/"
+    - label: "3Rivers Archery — Building Wood Arrows (nock installation section)"
+      url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+
+- term: "Hot-melt adhesive"
+  definition: "A thermoplastic adhesive (typically a low-temperature formulation for archery use) applied in solid stick or pellet form and liquefied with gentle heat before seating a field point or broadhead onto a wood shaft's 5-degree point taper. Sets rigid on cooling; releases cleanly when re-heated, enabling field point replacement without shaft damage."
+  references:
+    - label: "3Rivers Archery — Building Wood Arrows (point-mounting section)"
+      url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+    - label: "Stickbow.com — Point and Nock Tapers"
+      url: "http://www.stickbow.com/stickbow/arrowbuilding/tapertools.html"
+
+- term: "Cyanoacrylate (CA) glue"
+  definition: "A fast-curing single-component adhesive that polymerizes on contact with moisture. Thin-viscosity CA wicks into hairline cracks by capillary action and is used in archery repair to stabilize minor nock-end splits. Not a structural repair for cracks that open under load."
+  references:
+    - label: "TradTalk Forums — CA glue for arrow repair"
+      url: "https://www.tradtalk.com/forums/"
+    - label: "Wikipedia — Cyanoacrylate"
+      url: "https://en.wikipedia.org/wiki/Cyanoacrylate"
+
+- term: "T-square (bow square)"
+  definition: "A measuring tool shaped like the letter T, used in archery to set and verify the nocking point position on a bowstring. The stem rests against the string and the crossbar sits on the arrow shelf, allowing the archer to measure the exact vertical distance from the shelf surface to the nocking point. The standard starting nocking point for traditional bows is 1/2 inch above the shelf."
+  references:
+    - label: "60X Custom Strings — How to Set a Nocking Point With a Bow Square"
+      url: "https://www.60xcustomstrings.com/blog/how-to-set-a-nocking-point-with-a-bow-square/"
+    - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up"
+      url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+
+- term: "Porpoising"
+  definition: "A vertical up-and-down oscillation of the arrow in flight, visible as a wave pattern against the target face. Porpoising is caused by an incorrect nocking point position and is corrected by adjusting the nocking point up or down — not by changing spine."
+  references:
+    - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up (nocking point section)"
+      url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+    - label: "Archery Supplier — Recurve Bow Tuning Guide"
+      url: "https://archerysupplier.com/recurve-bow-tuning-guide/"
+
+- term: "Fishtailing"
+  definition: "A lateral side-to-side oscillation of the arrow in flight. Fishtailing indicates spine mismatch — the arrow is bending too much (too weak) or not enough (too stiff) for the bow's draw weight and release. Corrected by changing point weight, shaft length, or spine grade."
+  references:
+    - label: "3Rivers Archery — Basic Longbow and Recurve Set-Up (spine section)"
+      url: "https://www.3riversarchery.com/blog/longbow-and-recurve-set-up/"
+    - label: "Archery Supplier — Recurve Bow Tuning Guide"
+      url: "https://archerysupplier.com/recurve-bow-tuning-guide/"

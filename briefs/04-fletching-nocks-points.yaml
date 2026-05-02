@@ -1,0 +1,60 @@
+weight: 4
+title: "Fletching, Nocks, and Points: Attaching Everything So Each Arrow Flies the Same"
+short_title: "Fletching and Points"
+driving_question: "How do I attach left-wing feathers, glue-on nocks, and 100-grain field points so all 24 arrows fly consistently?"
+concepts:
+  - "Feather fletching (left-wing vs right-wing)"
+  - "Shield cut vs parabolic cut"
+  - "Fletching jig use and feather clamp"
+  - "Nock insert installation"
+  - "Glue-on field point installation"
+contrast:
+  alternative: "Parabolic cut feathers"
+  when_alternative_wins: "Parabolic-cut feathers produce slightly less drag and noise, fly a bit faster, and are the standard for well-tuned target arrows. When spine is correctly matched and form is consistent, the parabolic's lower profile is an advantage at longer target distances. A parabolic cut is also more forgiving for a returning archer who is rebuilding consistent form — the lower surface area masks minor release errors less aggressively."
+reading:
+  primary:
+    url: "https://www.3riversarchery.com/blog/building-wood-arrows/"
+    section: "Fletching and Point Mounting sections — the wing-consistency rule and the hot-melt point process both live here; read them before touching any feather or point."
+  secondary:
+    url: "https://en.wikipedia.org/wiki/Fletching"
+    section: "Feather orientation section — the canonical statement on wing consistency and the slow-motion analysis finding that spin begins after the arrow passes the riser, which explains why consistency matters more than theoretical direction preference."
+exercise_goal: |
+  The learner fletch all 24 shafts with left-wing natural turkey feathers, shield cut, using the offset clamp on the fletching jig, then installs glue-on plastic nocks and 100-grain glue-on field points.
+
+  Wing direction verification:
+    - Before loading the jig, the learner must confirm all 24 feathers come from the same wing. Left-wing feathers curve in the opposite direction to right-wing feathers when held with the quill toward you.
+    - [TODO: Embed a labeled side-by-side photograph of a left-wing and right-wing turkey feather — Wikimedia Commons "turkey feather fletching" or "arrow fletching wing" are good search terms; if no free-use image clearly shows the curl direction difference, a labeled diagram is acceptable]
+    - The module-builder must reproduce the wing-consistency rule from 3Rivers Archery: "All feathers on an arrow must be from the same wing for proper flight."
+
+  Jig setup and fletching sequence:
+    - [TODO: Embed a labeled photograph or diagram of the fletching jig with the offset clamp loaded — show the clamp angle, the nock end alignment, and the feather placement zone (trailing edge 1/2"–5/8" from nock valley); label every component the learner will touch]
+    - The offset clamp rotates each successive feather 120° for a three-fletch configuration. The module-builder must describe the rotation sequence and confirm the jig's index ring aligns correctly at each position.
+    - Adhesive choice: the module-builder must name a specific fletching adhesive appropriate for natural feathers on a sealed cedar shaft (e.g., Fletch-Tite, Bohning Fletch-Tite Platinum) and describe the open time, clamp hold time, and curing period before the next feather can be rotated in.
+    - [TODO: Provide a per-arrow fletching log template — columns: shaft number, feather 1 date/time, feather 2 date/time, feather 3 date/time, visual inspection pass/fail (no lifted edges, no adhesive squeeze-out on the vane face) — the learner fills this in as they work through the batch]
+
+  FOC calculation after fletching (before points):
+    - Once feathers are cured, the learner adds the nock and feather weight to their batch-tracking table. Point weight (100 gr) is fixed. Now calculate FOC for a representative arrow before gluing points:
+    - FOC% = ((balance point − length/2) / length) × 100. For a target traditional arrow, aim for 10–15% FOC.
+    - [TODO: Show the learner how to locate the balance point — rest the arrow on a narrow fulcrum (a ruler edge or a pencil) and mark the balance point; embed a photograph or diagram illustrating this technique]
+
+  Nock installation:
+    - Seat the 11-degree plastic nock on the tapered nock end. Align the nock groove perpendicular to the cock feather (the single feather that faces away from the bow shelf on a right-hand shelf — for a left-handed archer shooting off the left shelf, the module-builder must clarify which feather is the index feather and its orientation relative to the shelf).
+    - Secure with a small drop of fletching adhesive or nock cement. Do not use hot-melt for nocks — the bond must hold under repeated string impact without becoming brittle.
+
+  Point installation:
+    - Heat the point-end taper and the inside of the 100 gr field point; apply hot-melt adhesive; seat the point and rotate to ensure straight alignment before cooling.
+    - [TODO: Embed a photograph or diagram of the point-seating step — showing the alcohol burner, the point held in pliers, the adhesive application, and the rotation-while-cooling alignment check; 3Rivers Archery's building guide or manufacturer educational images are the primary source; label each sub-step]
+    - Confirm alignment by rolling each finished arrow on a flat surface and watching for wobble at the tip. A wobbling tip indicates a crooked point — reheat and reseat.
+
+  The exercise ends with 24 fully fletched arrows with nocks and points installed, FOC calculated for a sample arrow, and all shafts tip-rolled for point alignment.
+validation_scenario: |
+  You fletched 12 arrows yesterday. This morning you notice three of them have a feather lifting at the trailing edge — the quill is separating from the shaft in the last 1/4 inch nearest the nock end. The other nine look clean.
+
+  Good answer covers:
+    - Trailing-edge lift is the most common fletching adhesive failure mode. Likely causes: (a) the shaft surface was not clean at that spot — residue from cresting paint or sealer that wasn't sanded off; (b) the clamp hold time was too short for the adhesive to set before the jig was advanced; (c) the ambient temperature was low, slowing cure to the point where the feather shifted before the bond was strong.
+    - Diagnosis: run a fingernail along the full length of all 12 arrows' feather edges and check for any other soft spots. The three visible lifts may not be the only failures.
+    - Recovery: carefully peel the affected feather back with a razor blade — do not tear or it pulls finish with it. Clean the shaft surface with a cotton swab and denatured alcohol. Let dry fully. Re-fletch with a slightly longer clamp hold time (check adhesive spec sheet for minimum) in a warmer location.
+    - Learner should also inspect all nine good arrows at the trailing edge, not just the three bad ones — micro-lifts that aren't visible may open up after the first shot.
+    - Preventive fix going forward: lightly scuff the shaft surface in the feather-contact zone with 400-grit before the next fletching session, and confirm the workspace temperature is within the adhesive's rated range.
+prior_ends_with: "The learner has 24 sealed, finished, and optionally crested shafts with consistent finish weight. They are ready to attach feathers, nocks, and points."
+next_expects: "The learner has 24 fully assembled arrows — left-wing shield-cut three-fletch with offset, glue-on plastic nocks, 100-grain glue-on field points — with FOC verified and tip alignment confirmed. They are ready to shoot a tuning group and establish the maintenance and repair workflow."

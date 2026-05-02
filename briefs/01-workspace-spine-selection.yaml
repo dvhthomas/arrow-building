@@ -1,0 +1,43 @@
+weight: 1
+title: "Workspace and Spine Selection: How to Pick the Right Shaft Before You Cut Anything"
+short_title: "Spine Selection"
+driving_question: "How do I pick the right shaft for my 40 lb bow before I cut anything?"
+concepts:
+  - "Static spine measurement and AMO standard"
+  - "Dynamic spine and shaft selection"
+  - "Draw weight and draw length"
+  - "Archer's paradox"
+  - "Stu Miller's Dynamic Spine Calculator"
+contrast:
+  alternative: "Carbon or aluminum arrows"
+  when_alternative_wins: "High-volume competitive shooting where durability, weight tolerance, and consistent spine from shaft to shaft are paramount. Carbon arrows do not warp, absorb no moisture, and hold spine indefinitely — for competitive 3D where durability matters more than aesthetic, carbon is the right call."
+reading:
+  primary:
+    url: "https://eastonarchery.com/2014/07/making-sense-of-arrow-spine/"
+    section: "Static spine and dynamic spine — read both sections to understand why the label on the shaft is only a starting point, not the final answer."
+  secondary:
+    url: "https://heilakka.com/stumiller/"
+    section: "Overview and How to Use — run the calculator with the 40 lb / 28\" / 100 gr worked example before moving to the shaft-prep module."
+exercise_goal: |
+  The learner sets up the workspace (clears the bench, checks the taper tool, loads the fletching jig with the offset clamp, confirms the dip tube is clean and plumb) and then works through the spine selection calculation for the matched set.
+
+  Starting data: 40 lb bow, AMO 28" draw length (working default), 100 gr field point, 11/32" Port Orford cedar shaft target.
+
+  Steps scaffolded for the learner:
+    - [TODO: Use the Rose City Archery spine chart (https://www.rosecityarchery.com/pages/spine-weight-recurve-longbow-compound-bow-chart) to read the recommended spine for a 40 lb bow at 28" with 100 gr points — record the result here]
+    - [TODO: Open Stu Miller's calculator (https://heilakka.com/stumiller/) and enter the same parameters; note where it agrees and where it diverges from the chart — record both outputs and explain which you'll use as the purchase spec]
+    - Worked adjustment: if actual draw length turns out to be 29" instead of 28", apply the Rose City per-inch rule (add 5 lb spine per inch above 28") and record the revised spine. If actual draw length is 27", subtract 5 lb. The module-builder must display this calculation explicitly so the learner can apply it when they measure their own draw length.
+    - [TODO: Embed labeled workspace diagram — suggest Wikimedia Commons search "arrow building workbench" or "archery fletching jig setup"; if free-use coverage is thin, a clearly labeled photograph of the learner's own bench (or AI-generated diagram labeled as such) is acceptable]
+    - [TODO: Embed labeled diagram of archer's paradox — Wikimedia Commons has a public-domain illustration (search "archer's paradox diagram"); use it to show how the arrow bends around the riser and why spine stiffness controls whether it recovers to straight flight]
+
+  The exercise ends with a written spec card: shaft diameter (11/32"), target static spine, shaft material (Port Orford cedar), point weight (100 gr), draw weight (40 lb), draw length (28" default or measured). This card is the purchase / batch-selection reference for module 2.
+validation_scenario: |
+  You've calculated a spine of 50-55# for your 40 lb bow at 28" draw with 100 gr points. A friend who shoots a 55 lb recurve says he has leftover 45-50# cedar shafts he'll give you for free.
+
+  Good answer covers:
+    - The free shafts are too stiff (higher spine number = stiffer for the AMO wood standard) — a stiff arrow on a lighter bow will typically kick left for a left-handed archer and not recover cleanly through archer's paradox.
+    - The correct diagnosis tool is to shoot a bareshaft and observe horizontal impact deviation — but before cutting anything, the right call is to decline the free shafts or only accept them if the learner's actual draw length turns out to be significantly shorter than 28" (which would stiffen the dynamic spine enough to use them).
+    - Dynamic spine, not just static, is what matters — point weight, shaft length, and draw weight all interact. The learner must mention at least one of these factors when explaining why "same spine number" is not the same thing across two different bow setups.
+    - Honest acknowledgment: if the learner has a way to verify actual draw length, they should do that first before making a final call.
+prior_ends_with: "The learner has done this before but it's been a while. They own all the tools (fletching jig with offset clamp, taper tool, dip tube) but none of it is currently set up. They have a 40 lb bow with an unknown draw length."
+next_expects: "The learner has a written spine specification for 11/32 inch Port Orford cedar at 40 lb / 28 inch AMO, understands why archer's paradox makes spine match critical for traditional bows, and has confirmed the workspace is functional. They are ready to evaluate and prepare a batch of raw shafts."

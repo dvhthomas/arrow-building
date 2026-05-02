@@ -1,0 +1,34 @@
+{{ define "main" }}
+<article class="single">
+  <header>
+    <h1>{{ .Title }}</h1>
+  </header>
+  <div class="single-body">{{ .Content }}</div>
+
+  {{/* Exercise → "Show model answer" CTA */}}
+  {{ if eq .Type "exercise" }}
+    {{ $base := path.BaseName .File.LogicalName }}
+    {{ $answerName := printf "%s-answer" $base }}
+    {{ with .Parent.GetPage $answerName }}
+    <aside class="model-answer-cta">
+      <p><strong>Tried it?</strong> Compare your work against the worked solution.</p>
+      <a class="model-answer-button" href="{{ .RelPermalink }}">Show model answer &rarr;</a>
+    </aside>
+    {{ end }}
+  {{ end }}
+
+  {{/* Answer → "Back to exercise" link */}}
+  {{ if eq .Type "answer" }}
+    {{ $base := path.BaseName .File.LogicalName }}
+    {{ $exName := strings.TrimSuffix "-answer" $base }}
+    {{ with .Parent.GetPage $exName }}
+    <p class="back-link"><a href="{{ .RelPermalink }}">&larr; Back to the exercise</a></p>
+    {{ end }}
+  {{ end }}
+
+  {{/* Default back-link for everything else */}}
+  {{ if and .Parent (ne .Type "answer") }}
+  <p class="back-link"><a href="{{ .Parent.RelPermalink }}">&larr; Back to {{ .Parent.Title }}</a></p>
+  {{ end }}
+</article>
+{{ end }}

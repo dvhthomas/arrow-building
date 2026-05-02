@@ -1,0 +1,51 @@
+{{ define "main" }}
+<article class="module">
+  <header class="module-header">
+    {{ if .Params.weight }}<span class="module-number">Module {{ .Params.weight }}</span>{{ end }}
+    <h1>{{ .Title }}</h1>
+    {{/* Show summary only when it adds info beyond the driving question. */}}
+    {{ $summary := .Params.summary }}
+    {{ $dq := .Params.driving_question }}
+    {{ if and $summary (ne $summary $dq) }}<p class="summary">{{ $summary }}</p>{{ end }}
+    {{ with $dq }}<p class="driving-question"><strong>{{ . }}</strong></p>{{ end }}
+    {{ with .Params.blog_post }}
+    <p class="blog-link"><a href="{{ . }}" target="_blank" rel="noopener">Read the blog post &#8599;</a></p>
+    {{ end }}
+  </header>
+
+  <div class="module-body">{{ .Content }}</div>
+
+  <section class="practice">
+    <h2>Practice</h2>
+    <p>Reading the concept is not the goal. Test it.</p>
+    <ul>
+      {{ with .GetPage "validation" }}
+        <li><strong><a href="{{ .RelPermalink }}">Validation</a></strong> — try the scenario aloud, then answer in writing.</li>
+      {{ end }}
+      {{ with .GetPage "exercises" }}
+        {{ if gt (len (where .Pages "Params.type" "exercise")) 0 }}
+        <li><strong><a href="{{ .RelPermalink }}">Exercises</a></strong> — hands-on tasks with [TODO:] markers to fill in.</li>
+        {{ end }}
+      {{ end }}
+    </ul>
+  </section>
+
+  {{/* Weight-ordered prev/next within /modules/. */}}
+  {{ $allModules := .Parent.Sections.ByWeight }}
+  {{ $here := .RelPermalink }}
+  {{ $prev := false }}{{ $next := false }}{{ $hit := false }}
+  {{ range $allModules }}
+    {{ if $hit }}{{ if not $next }}{{ $next = . }}{{ end }}{{ end }}
+    {{ if eq .RelPermalink $here }}{{ $hit = true }}{{ end }}
+    {{ if not $hit }}{{ $prev = . }}{{ end }}
+  {{ end }}
+  <nav class="module-nav">
+    <span class="module-nav-slot module-nav-prev">
+      {{ with $prev }}<a href="{{ .RelPermalink }}">&larr; <span class="label">Previous module</span><br>{{ .Title }}</a>{{ end }}
+    </span>
+    <span class="module-nav-slot module-nav-next">
+      {{ with $next }}<a href="{{ .RelPermalink }}"><span class="label">Next module</span> &rarr;<br>{{ .Title }}</a>{{ end }}
+    </span>
+  </nav>
+</article>
+{{ end }}

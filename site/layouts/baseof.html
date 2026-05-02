@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en" data-font-preset="{{ .Site.Params.font_preset | default "signage" }}">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <style>:root { --hue: {{ .Site.Params.hue | default 220 }}; }</style>
+    {{/* Apply saved theme before paint to avoid a flash of the wrong theme.
+         Stored values: "light" or "dark"; absent = follow system. */}}
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("tmb-theme");
+          if (saved === "light" || saved === "dark") {
+            document.documentElement.setAttribute("data-theme", saved);
+          }
+        } catch (e) { /* localStorage may be blocked; fall back to system */ }
+      })();
+    </script>
+    {{ $preset := .Site.Params.font_preset | default "signage" }}
+    {{ if eq $preset "signage" }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono&display=swap">
+    {{ else if eq $preset "book" }}
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;600&family=JetBrains+Mono&display=swap">
+    {{ end }}
+    {{/* No fingerprint — keep the URL stable as /css/site.css. Going through
+         resources.Get (vs static/) leaves room for future Hugo Pipes processing
+         (minification, SCSS) without changing the URL contract. */}}
+    {{ $siteCss := resources.Get "css/site.css" }}
+    <link rel="stylesheet" href="{{ $siteCss.RelPermalink }}" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    {{ partial "nav.html" . }}
+    <div class="layout">
+      {{ partial "modules-sidebar.html" . }}
+      <main id="main" role="main">{{ block "main" . }}{{ end }}</main>
+    </div>
+    <footer><p>{{ .Site.Params.description }}</p></footer>
+    {{/* Theme switch click handler. "system" = remove the attribute so the
+         CSS @media (prefers-color-scheme: dark) rule takes over. */}}
+    <script>
+      (function () {
+        var root = document.documentElement;
+        var buttons = document.querySelectorAll(".theme-switch [data-theme-set]");
+        if (!buttons.length) return;
+        function current() {
+          var saved;
+          try { saved = localStorage.getItem("tmb-theme"); } catch (e) {}
+          return (saved === "light" || saved === "dark") ? saved : "system";
+        }
+        function paint() {
+          var c = current();
+          buttons.forEach(function (b) {
+            b.setAttribute("aria-pressed", b.getAttribute("data-theme-set") === c ? "true" : "false");
+          });
+        }
+        buttons.forEach(function (b) {
+          b.addEventListener("click", function () {
+            var next = b.getAttribute("data-theme-set");
+            try {
+              if (next === "system") {
+                localStorage.removeItem("tmb-theme");
+                root.removeAttribute("data-theme");
+              } else {
+                localStorage.setItem("tmb-theme", next);
+                root.setAttribute("data-theme", next);
+              }
+            } catch (e) {
+              if (next === "system") root.removeAttribute("data-theme");
+              else root.setAttribute("data-theme", next);
+            }
+            paint();
+          });
+        });
+        paint();
+      })();
+    </script>
+    {{ if .Store.Get "hasMermaid" }}
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@11/dist/mermaid.esm.min.mjs";
+      const dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      mermaid.initialize({ startOnLoad: true, theme: dark ? "dark" : "default", securityLevel: "strict" });
+    </script>
+    {{ end }}
+  </body>
+</html>

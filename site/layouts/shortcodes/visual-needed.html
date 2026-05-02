@@ -1,0 +1,16 @@
+{{- $what := .Get "what" -}}
+{{- $youtube := .Get "youtube" -}}
+{{- $wikimedia := .Get "wikimedia" -}}
+{{- $description := .Inner -}}
+<aside class="visual-needed" role="note" aria-label="Visual reference needed">
+  <div class="visual-needed-label">Visual reference: {{ $what }}</div>
+  {{ if $description }}<div class="visual-needed-body">{{ $description | markdownify }}</div>{{ end }}
+  <div class="visual-needed-links">
+    {{ if $youtube -}}
+      <a href="https://www.youtube.com/results?search_query={{ $youtube | urlquery }}" target="_blank" rel="noopener noreferrer">▶︎ Watch on YouTube</a>
+    {{- end }}
+    {{ if $wikimedia -}}
+      <a href="https://commons.wikimedia.org/w/index.php?search={{ $wikimedia | urlquery }}&amp;ns0=1" target="_blank" rel="noopener noreferrer">🔍 Search Wikimedia Commons</a>
+    {{- end }}
+  </div>
+</aside>
