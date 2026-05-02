@@ -1,4 +1,5 @@
 {{- $term := .Get 0 -}}
 {{- $display := .Get 1 | default $term -}}
 {{- $anchor := $term | urlize -}}
-<a class="gloss" href="{{ "/glossary/" | relURL }}#{{ $anchor }}">{{ $display }}</a>
+{{- $glossary := site.GetPage "/glossary" -}}
+<a class="gloss" href="{{ with $glossary }}{{ .RelPermalink }}{{ end }}#{{ $anchor }}">{{ $display }}</a>
